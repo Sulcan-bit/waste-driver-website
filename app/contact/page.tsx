@@ -8,6 +8,10 @@ export default function ContactPage() {
         <p className="mt-4 max-w-2xl mx-auto text-lg text-slate-600">
           Have questions or need help? Send us a message and our team will get back to you.
         </p>
+
+        <p className="mt-2 text-slate-700 font-medium">
+          Phone: <span className="text-emerald-700">1‑8‑WD‑875‑4000</span>
+        </p>
       </section>
 
       {/* Contact Form */}
@@ -81,8 +85,13 @@ export default function ContactPage() {
 
       {/* Direct Email */}
       <section className="text-center text-slate-600">
-        Or email us directly at:{" "}
-        <span className="text-emerald-700 font-medium">info@wastedriver.com</span>
+        Or email us directly at{" "}
+        <a
+          href="mailto:info@wastedriver.com"
+          className="text-emerald-700 font-medium hover:underline"
+        >
+          info@wastedriver.com
+        </a>
       </section>
 
     </div>

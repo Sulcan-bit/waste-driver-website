@@ -10,8 +10,9 @@ export default function HomePage() {
         </h1>
 
         <p className="mt-4 max-w-2xl text-lg text-slate-600">
-          Fast, clean, eco‑friendly waste pickup for homes and communities.
-          Book a pickup in minutes and keep your property looking its best.
+          Waste Drivers keep your home and community decluttered and clean with
+          economical, fast, safe, reliable, and accountable curbside or alley
+          pickup service.
         </p>
 
         <div className="mt-8 flex flex-col md:flex-row gap-4">
@@ -29,6 +30,16 @@ export default function HomePage() {
             Create Profile
           </a>
         </div>
+
+        {/* Taglines */}
+        <div className="mt-6 space-y-2 text-slate-700 max-w-xl">
+          <p className="italic">
+            “Any time you clean out your garage, make sure you order a Waste Driver.”
+          </p>
+          <p className="italic">
+            “All Waste Drivers provide their identification and information to ensure a safe service for Users.”
+          </p>
+        </div>
       </section>
 
       {/* Residential Image Banner */}
@@ -43,12 +54,13 @@ export default function HomePage() {
       {/* Services Preview */}
       <section>
         <h2 className="text-3xl font-bold text-slate-900 text-center">
-          What We Handle
+          What Our Drivers Handle
         </h2>
 
         <p className="mt-3 text-center text-slate-600 max-w-2xl mx-auto">
-          From household junk to yard waste, we help keep your home and
-          community clean with fast, reliable pickup services.
+          Waste Drivers keep your home and community decluttered and clean with
+          economical, fast, safe, reliable, and accountable curbside or alley
+          pickup service.
         </p>
 
         <div className="mt-12 grid gap-8 md:grid-cols-3">

@@ -7,9 +7,9 @@ export default function ServicesPage() {
       <section className="text-center">
         <h1 className="text-4xl font-bold text-slate-900">Services & Pricing</h1>
         <p className="mt-4 max-w-2xl mx-auto text-lg text-slate-600">
-          Waste Driver connects homeowners and businesses with local drivers for fast, clean,
-          and eco‑friendly junk and waste removal. Our model keeps costs low, reduces emissions,
-          and makes small‑scale disposal simple and affordable.
+          Waste Driver connects homeowners and businesses with local drivers for fast,
+          clean, and eco‑friendly waste removal. Our model keeps costs low, reduces
+          emissions, and makes small‑scale disposal simple and affordable.
         </p>
 
         <div className="mt-6 flex justify-center gap-4">
@@ -31,9 +31,17 @@ export default function ServicesPage() {
 
       {/* Services Section */}
       <section>
-        <h2 className="text-3xl font-bold text-slate-900 text-center">What We Remove</h2>
+        <h2 className="text-3xl font-bold text-slate-900 text-center">
+          What Our Drivers Handle
+        </h2>
+
+        <p className="mt-3 text-center text-slate-600 max-w-2xl mx-auto">
+          Waste Drivers keep your home and community decluttered and clean with
+          economical, fast, safe, reliable, and accountable curbside or alley pickup service.
+        </p>
 
         <div className="mt-12 grid gap-10 md:grid-cols-2">
+
           <div className="rounded-2xl border p-8 shadow-sm">
             <h3 className="text-xl font-semibold text-slate-900">Residential Junk</h3>
             <p className="mt-3 text-slate-600">
@@ -62,6 +70,7 @@ export default function ServicesPage() {
               Our driver‑to‑user model reduces unnecessary trips and lowers greenhouse gas emissions.
             </p>
           </div>
+
         </div>
       </section>
 
