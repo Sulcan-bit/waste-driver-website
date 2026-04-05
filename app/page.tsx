@@ -1,43 +1,63 @@
-// app/page.tsx
+"use client";
+
+import { useMemo } from "react";
+
 export default function HomePage() {
+  // Taglines to rotate randomly
+  const taglines = [
+    "Waste Driver — Junk Removal in Minutes.",
+    "Your Truck + Our App = A More Efficient Marketplace.",
+    "Become a Waste Driver Partner.",
+    "Waste Driver — the Uber for waste drivers.",
+    "We’re looking for Independent Drivers as partners."
+  ];
+
+  const randomTagline = useMemo(() => {
+    return taglines[Math.floor(Math.random() * taglines.length)];
+  }, []);
+
   return (
     <div className="space-y-24">
 
       {/* Hero Section */}
-      <section className="flex flex-col items-center text-center">
-        <h1 className="text-4xl font-bold text-slate-900 md:text-5xl">
-          AI‑Powered Junk & Waste Transportation
-        </h1>
+      <section className="relative w-full rounded-3xl overflow-hidden shadow-lg">
+        <img
+          src="/images/hero-truck.jpg"
+          alt="Independent driver truck"
+          className="h-[420px] w-full object-cover"
+        />
 
-        <p className="mt-4 max-w-2xl text-lg text-slate-600">
-          Waste Driver connects Users with verified Independent Drivers for lowest cost,
-          fast, safe, reliable, and accountable curbside or alley pickup service.
-        </p>
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center px-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-white drop-shadow-lg">
+            AI‑Powered Junk & Waste Transportation
+          </h1>
 
-        {/* CTA Buttons */}
-        <div className="mt-8 flex flex-col md:flex-row gap-4">
-          <a
-            href="/users"
-            className="rounded-xl bg-emerald-600 px-8 py-3 text-white font-semibold shadow hover:bg-emerald-700"
-          >
-            Book a Pickup
-          </a>
+          <p className="mt-4 max-w-2xl text-lg text-slate-200 drop-shadow">
+            Fast, safe, reliable curbside pickup from verified Independent Drivers.
+          </p>
 
-          <a
-            href="/download"
-            className="rounded-xl border border-emerald-600 px-8 py-3 text-emerald-700 font-semibold hover:bg-emerald-50"
-          >
-            Download the App
-          </a>
-        </div>
+          {/* CTA Buttons */}
+          <div className="mt-8 flex flex-col md:flex-row gap-4">
+            <a
+              href="/users"
+              className="rounded-xl bg-emerald-600 px-8 py-3 text-white font-semibold shadow hover:bg-emerald-700"
+            >
+              Book a Pickup
+            </a>
 
-        {/* Taglines */}
-        <div className="mt-6 space-y-2 text-slate-700 max-w-xl">
-          <p>Waste Driver — Junk Removal in Minutes.</p>
-          <p>Your Truck + Our App = A More Efficient Marketplace for Users and Independent Drivers.</p>
-          <p>Become a Waste Driver Partner.</p>
-          <p>Waste Driver — the Uber for waste drivers.</p>
-          <p>We’re looking for Independent Drivers as partners.</p>
+            <a
+              href="/download"
+              className="rounded-xl border border-white px-8 py-3 text-white font-semibold hover:bg-white/20"
+            >
+              Download the App
+            </a>
+          </div>
+
+          {/* Random tagline */}
+          <p className="mt-6 text-slate-200 text-lg italic drop-shadow">
+            {randomTagline}
+          </p>
         </div>
       </section>
 
@@ -57,11 +77,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Residential Image Banner */}
+      {/* Curbside Waste Banner */}
       <section className="relative h-64 w-full overflow-hidden rounded-3xl shadow-lg">
         <img
-          src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4?auto=format&fit=crop&w=1600&q=80"
-          alt="Clean residential neighborhood"
+          src="/images/hero-curbside.jpg"
+          alt="Curbside waste ready for pickup"
           className="h-full w-full object-cover"
         />
       </section>
@@ -128,7 +148,7 @@ export default function HomePage() {
           </li>
 
           <li>
-            <p className="text-xl font-semibold text-slate-900">2. Receive 1 or More Driver Quotes</p>
+            <p className="text-xl font-semibold text-slate-900">2. Receive Driver Quotes</p>
             <p className="mt-1">Drivers review your photos and send quotes directly to your phone.</p>
           </li>
 
