@@ -1,8 +1,16 @@
 import { CanadaMap } from "@/components/CanadaMap";
+import { Logo } from "@/components/Logo";
 
 export default function ServicesPage() {
   return (
     <div className="space-y-28">
+
+      {/* Header Logo */}
+      <header className="flex justify-center pt-6">
+        <a href="/">
+          <Logo size={48} />
+        </a>
+      </header>
 
       {/* HERO SECTION */}
       <section className="text-center max-w-3xl mx-auto">
@@ -98,7 +106,8 @@ export default function ServicesPage() {
           <div className="rounded-2xl border p-8 shadow-sm hover:shadow-md transition">
             <h3 className="text-xl font-semibold text-slate-900">Small Commercial Loads</h3>
             <p className="mt-3 text-slate-600">
-              Office cleanouts, retail waste, small business junk, and light construction debris.
+              Office cleanouts, retail waste, small business junk, light construction debris,
+              <strong> house construction waste, and renovation waste.</strong>
             </p>
           </div>
 
@@ -164,8 +173,11 @@ export default function ServicesPage() {
           Calgary serves as our headquarters and primary operations hub.
         </p>
 
-        <div className="mt-12">
-          <CanadaMap />
+        {/* Larger, more user-friendly map */}
+        <div className="mt-12 flex justify-center">
+          <div className="scale-[1.25] md:scale-[1.35] origin-top">
+            <CanadaMap />
+          </div>
         </div>
 
         <p className="mt-6 text-center text-slate-700">

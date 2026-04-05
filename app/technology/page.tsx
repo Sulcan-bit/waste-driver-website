@@ -1,4 +1,5 @@
-// app/technology/page.tsx
+import { CanadaMap } from "@/components/CanadaMap";
+
 export default function TechnologyPage() {
   return (
     <div className="space-y-24">
@@ -10,15 +11,19 @@ export default function TechnologyPage() {
         </h1>
 
         <p className="mt-4 max-w-2xl text-lg text-slate-600">
-          Waste Driver is an environmental and transportation technology company that uses AI to lower
-          the cost of junk and waste transportation while maintaining or increasing profitability for
-          Independent Drivers.
+          Waste Driver is an environmental and transportation technology platform company that uses AI 
+          to lower the cost of junk and waste transportation while maintaining or increasing profitability 
+          for Independent Drivers.
         </p>
       </section>
 
-      {/* Network Map Placeholder */}
+      {/* Network Map */}
       <section>
-        <h2 className="text-3xl font-bold text-slate-900 text-center">
+        <div className="max-w-5xl mx-auto mt-10">
+          <CanadaMap />
+        </div>
+
+        <h2 className="text-3xl font-bold text-slate-900 text-center mt-16">
           North American Network
         </h2>
 
@@ -27,11 +32,6 @@ export default function TechnologyPage() {
           Edmonton, Vancouver, Kelowna, Winnipeg, Toronto, Saskatoon, Regina, Ottawa, Hamilton,
           Montreal, and Quebec City.
         </p>
-
-        <div className="mt-10 h-64 w-full rounded-3xl bg-slate-200 flex items-center justify-center text-slate-500">
-          {/* Placeholder for future map component */}
-          <span>Map Component Coming Soon</span>
-        </div>
       </section>
 
       {/* Routing Efficiency */}
@@ -40,10 +40,19 @@ export default function TechnologyPage() {
           Routing Efficiency
         </h2>
 
-        <p className="mt-6 max-w-3xl mx-auto text-center text-slate-700">
-          Waste Driver provides efficient routing that results in routes 30–40% more efficient than
-          1‑800‑type junk removal companies. This reduces emissions, lowers User costs, and increases
+        <p className="mt-6 max-w-3xl mx-auto text-center text-slate-700 leading-relaxed">
+          Waste Driver provides efficient routing that results in routes 30–40% more efficient than 
+          1‑800‑type junk removal companies. This reduces emissions, lowers User costs, and increases 
           Driver efficiency — allowing Drivers to complete more jobs per hour.
+        </p>
+
+        <p className="mt-4 max-w-3xl mx-auto text-center text-slate-700 leading-relaxed">
+          Our routing engine is built on principles derived from the well‑known 
+          <strong> Travelling Salesman Problem (TSP)</strong> — a classic optimization challenge where 
+          the goal is to determine the shortest possible route connecting multiple stops. Historically, 
+          TSP was extremely difficult to solve at scale, but modern AI compute allows Waste Driver to 
+          generate near‑optimal routes instantly. This results in tighter route clustering, reduced 
+          deadhead time, and significantly more efficient job sequencing for Independent Drivers.
         </p>
 
         <div className="mt-12 grid gap-8 md:grid-cols-3">

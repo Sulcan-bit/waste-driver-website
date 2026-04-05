@@ -1,15 +1,16 @@
 "use client";
 
 import { useMemo } from "react";
+import { CanadaMap } from "@/components/CanadaMap";
+import { Logo } from "@/components/Logo";
 
 export default function HomePage() {
-  // Taglines to rotate randomly
   const taglines = [
     "Waste Driver — Junk Removal in Minutes.",
     "Your Truck + Our App = A More Efficient Marketplace.",
     "Become a Waste Driver Partner.",
     "Waste Driver — the Uber for waste drivers.",
-    "We’re looking for Independent Drivers as partners."
+    "We’re looking for Independent Drivers as partners to join our network."
   ];
 
   const randomTagline = useMemo(() => {
@@ -18,6 +19,13 @@ export default function HomePage() {
 
   return (
     <div className="space-y-24">
+
+      {/* Header Logo (Global Pattern) */}
+      <header className="flex justify-center pt-6">
+        <a href="/">
+          <Logo size={48} />
+        </a>
+      </header>
 
       {/* Hero Section */}
       <section className="relative w-full rounded-3xl overflow-hidden shadow-lg">
@@ -29,6 +37,7 @@ export default function HomePage() {
 
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center px-6">
+
           <h1 className="text-4xl md:text-5xl font-bold text-white drop-shadow-lg">
             AI‑Powered Junk & Waste Transportation
           </h1>
@@ -119,20 +128,21 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="rounded-2xl border p-6 shadow-sm hover:shadow-md transition">
-            <h3 className="text-xl font-semibold text-slate-900">Eco‑Friendly Disposal</h3>
-            <p className="mt-2 text-slate-600">
-              Every job includes CO₂e savings and anti‑dumping verification.
-            </p>
-          </div>
+        </div>
+      </section>
 
-          <div className="rounded-2xl border p-6 shadow-sm hover:shadow-md transition">
-            <h3 className="text-xl font-semibold text-slate-900">Trusted Independent Drivers</h3>
-            <p className="mt-2 text-slate-600">
-              Verified, rated, and supported by Waste Driver’s compliance systems.
-            </p>
-          </div>
+      {/* Canada Map Section */}
+      <section className="max-w-5xl mx-auto">
+        <h2 className="text-3xl font-bold text-slate-900 text-center">
+          Our Canadian Network
+        </h2>
 
+        <p className="mt-3 text-center text-slate-600 max-w-2xl mx-auto">
+          Waste Driver operates across Canada with verified Independent Drivers in major cities.
+        </p>
+
+        <div className="mt-12">
+          <CanadaMap />
         </div>
       </section>
 
