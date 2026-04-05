@@ -5,8 +5,11 @@ export default function ContactPage() {
       {/* Header */}
       <section className="text-center">
         <h1 className="text-4xl font-bold text-slate-900">Contact Us</h1>
+
         <p className="mt-4 max-w-2xl mx-auto text-lg text-slate-600">
-          Have questions or need help? Send us a message and our team will get back to you.
+          Have questions about junk removal, driving with us, or partnerships?
+          Our team is here to help. Waste Driver operates across Canada with
+          headquarters in Calgary, Alberta.
         </p>
 
         <p className="mt-2 text-slate-700 font-medium">

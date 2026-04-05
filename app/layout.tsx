@@ -2,9 +2,9 @@ import "./globals.css";
 import { Logo } from "@/components/Logo";
 
 export const metadata = {
-  title: "Waste Driver Inc.",
+  title: "Waste Driver Inc. – AI‑Powered Junk & Waste Transportation",
   description:
-    "Residential and commercial waste removal made simple, clean, and eco‑friendly.",
+    "Waste Driver connects Users with verified Independent Drivers for fast, affordable, environmentally responsible junk removal.",
 };
 
 export default function RootLayout({
@@ -25,9 +25,28 @@ export default function RootLayout({
 
             {/* Navigation */}
             <nav className="flex items-center gap-6 text-sm font-medium">
+
               <a href="/" className="hover:text-emerald-600">Home</a>
-              <a href="/services" className="hover:text-emerald-600">Services & Pricing</a>
-              <a href="/contact" className="hover:text-emerald-600">Contact</a>
+
+              <a href="/services" className="hover:text-emerald-600">
+                Services & Pricing
+              </a>
+
+              <a href="/users" className="hover:text-emerald-600">
+                Users
+              </a>
+
+              <a href="/drivers" className="hover:text-emerald-600">
+                Drivers
+              </a>
+
+              <a href="/technology" className="hover:text-emerald-600">
+                Technology
+              </a>
+
+              <a href="/contact" className="hover:text-emerald-600">
+                Contact
+              </a>
 
               {/* Phone Number */}
               <span className="text-slate-700 font-semibold">
@@ -70,7 +89,9 @@ export default function RootLayout({
             {/* Contact Section */}
             <div className="mb-10">
               <h3 className="text-lg font-semibold text-slate-900">Contact Us</h3>
-              <p className="mt-2">Phone: <span className="font-medium">1‑8‑WD‑875‑4000</span></p>
+              <p className="mt-2">
+                Phone: <span className="font-medium">1‑8‑WD‑875‑4000</span>
+              </p>
               <p className="mt-1">
                 Email:{" "}
                 <a
@@ -87,7 +108,6 @@ export default function RootLayout({
               <h3 className="text-lg font-semibold text-slate-900">Follow Us</h3>
 
               <div className="mt-4 flex flex-wrap gap-4 text-slate-700">
-
                 <a href="https://twitter.com/wastedriver4000" target="_blank" className="hover:text-emerald-600">
                   X / Twitter: @wastedriver4000
                 </a>
@@ -111,7 +131,6 @@ export default function RootLayout({
                 <a href="https://linkedin.com/company/WasteDriver" target="_blank" className="hover:text-emerald-600">
                   LinkedIn: WasteDriver
                 </a>
-
               </div>
             </div>
 
@@ -119,7 +138,7 @@ export default function RootLayout({
             <div className="mb-8">
               <h3 className="text-lg font-semibold text-slate-900">Get the App</h3>
               <p className="text-slate-600 mt-1">
-                Request pickups, track drivers, and manage your profile.
+                Request pickups, receive quotes, and manage your profile.
               </p>
 
               <div className="mt-4 flex gap-4">
