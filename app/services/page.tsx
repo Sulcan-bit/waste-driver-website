@@ -165,7 +165,6 @@ export default function ServicesPage() {
           Calgary serves as our headquarters and primary operations hub.
         </p>
 
-        {/* Corrected Map Wrapper */}
         <div className="mt-12 flex justify-center">
           <div className="w-full max-w-4xl">
             <CanadaMap />
