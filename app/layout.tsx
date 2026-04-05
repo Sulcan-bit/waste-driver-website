@@ -20,7 +20,7 @@ export default function RootLayout({
         <header className="border-b bg-white">
           <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
 
-            {/* Logo (now clickable) */}
+            {/* Logo as Home link */}
             <a href="/" className="flex items-center">
               <Logo size={40} />
             </a>
@@ -28,7 +28,7 @@ export default function RootLayout({
             {/* Navigation */}
             <nav className="flex items-center gap-6 text-sm font-medium">
 
-              {/* Removed the old "Home" link */}
+              {/* Home link removed */}
 
               <a href="/services" className="hover:text-emerald-600">
                 Services & Pricing
