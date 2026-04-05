@@ -20,8 +20,8 @@ export default function RootLayout({
         <header className="border-b bg-white">
           <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
 
-            {/* Logo as Home link */}
-            <a href="/" className="flex items-center">
+            {/* Logo as Home link (UPDATED) */}
+            <a href="https://wastedriver.com" className="flex items-center">
               <Logo size={40} />
             </a>
 
