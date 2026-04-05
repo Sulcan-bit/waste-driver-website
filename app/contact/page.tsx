@@ -1,17 +1,8 @@
-import { Logo } from "@/components/Logo";
-
 export default function ContactPage() {
   return (
     <div className="space-y-16">
 
-      {/* Header Logo */}
-      <header className="flex justify-center pt-6">
-        <a href="/">
-          <Logo size={48} />
-        </a>
-      </header>
-
-      {/* Header */}
+      {/* Page Header */}
       <section className="text-center">
         <h1 className="text-4xl font-bold text-slate-900">Contact Us</h1>
 

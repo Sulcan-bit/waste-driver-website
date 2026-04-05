@@ -1,16 +1,8 @@
 import { CanadaMap } from "@/components/CanadaMap";
-import { Logo } from "@/components/Logo";
 
 export default function ServicesPage() {
   return (
     <div className="space-y-28">
-
-      {/* Header Logo */}
-      <header className="flex justify-center pt-6">
-        <a href="/">
-          <Logo size={48} />
-        </a>
-      </header>
 
       {/* HERO SECTION */}
       <section className="text-center max-w-3xl mx-auto">
@@ -173,9 +165,9 @@ export default function ServicesPage() {
           Calgary serves as our headquarters and primary operations hub.
         </p>
 
-        {/* Larger, more user-friendly map */}
+        {/* Corrected Map Wrapper */}
         <div className="mt-12 flex justify-center">
-          <div className="scale-[1.25] md:scale-[1.35] origin-top">
+          <div className="w-full max-w-4xl">
             <CanadaMap />
           </div>
         </div>

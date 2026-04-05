@@ -2,7 +2,6 @@
 
 import { useMemo } from "react";
 import { CanadaMap } from "@/components/CanadaMap";
-import { Logo } from "@/components/Logo";
 
 export default function HomePage() {
   const taglines = [
@@ -19,13 +18,6 @@ export default function HomePage() {
 
   return (
     <div className="space-y-24">
-
-      {/* Header Logo (Global Pattern) */}
-      <header className="flex justify-center pt-6">
-        <a href="/">
-          <Logo size={48} />
-        </a>
-      </header>
 
       {/* Hero Section */}
       <section className="relative w-full rounded-3xl overflow-hidden shadow-lg">

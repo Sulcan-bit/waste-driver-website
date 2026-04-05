@@ -1,15 +1,6 @@
-import { Logo } from "@/components/Logo";
-
 export default function UsersPage() {
   return (
     <div className="space-y-24">
-
-      {/* Header Logo */}
-      <header className="flex justify-center pt-6">
-        <a href="/">
-          <Logo size={48} />
-        </a>
-      </header>
 
       {/* Hero Section */}
       <section className="flex flex-col items-center text-center">
