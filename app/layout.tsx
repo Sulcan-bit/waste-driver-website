@@ -18,6 +18,9 @@ export default function RootLayout({
 
         {/* Header */}
         <header className="border-b bg-white">
+          <div style={{ background: "red", color: "white", padding: "4px" }}>
+  LAYOUT TEST
+</div>
           <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
 
             {/* Logo as Home link (FINAL VERSION) */}
