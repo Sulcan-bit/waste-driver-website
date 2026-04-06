@@ -30,7 +30,7 @@ export default function HomePage() {
 
             {/* NEW TAGLINE */}
             <p className="mt-10 text-xl font-semibold text-slate-900">
-              Your success is our success — we grow by helping Independent Drivers earn more with less hassle.
+              A more efficient alternative to big junk haulers — lower User costs without reducing Independent Driver earnings.
             </p>
           </div>
 
@@ -126,18 +126,18 @@ export default function HomePage() {
         <h3 className="text-xl font-semibold text-slate-900 mb-4">Cities Served</h3>
 
         <ul className="grid grid-cols-2 gap-3 text-slate-700 md:grid-cols-3">
-          <li>Vancouver</li>
-          <li>Kelowna</li>
-          <li>Edmonton</li>
-          <li>Calgary</li>
-          <li>Saskatoon</li>
-          <li>Regina</li>
-          <li>Winnipeg</li>
-          <li>Toronto</li>
-          <li>Hamilton</li>
-          <li>Ottawa</li>
-          <li>Montreal</li>
-          <li>Quebec City</li>
+          <li><strong>Calgary</strong> (Now Serving)</li>
+          <li>Vancouver (Coming Soon)</li>
+          <li>Kelowna (Coming Soon)</li>
+          <li>Edmonton (Coming Soon)</li>
+          <li>Saskatoon (Coming Soon)</li>
+          <li>Regina (Coming Soon)</li>
+          <li>Winnipeg (Coming Soon)</li>
+          <li>Toronto (Coming Soon)</li>
+          <li>Hamilton (Coming Soon)</li>
+          <li>Ottawa (Coming Soon)</li>
+          <li>Montreal (Coming Soon)</li>
+          <li>Quebec City (Coming Soon)</li>
         </ul>
       </section>
 
