@@ -1,121 +1,107 @@
-"use client";
-
-import { useMemo } from "react";
+import Image from "next/image";
 import { CanadaMap } from "@/components/CanadaMap";
 
 export default function HomePage() {
-  const taglines = [
-    "Waste Driver — Junk Removal in Minutes.",
-    "Your Truck + Our App = A More Efficient Marketplace.",
-    "Become a Waste Driver Partner.",
-    "Waste Driver — the Uber for waste drivers.",
-    "We’re looking for Independent Drivers as partners to join our network."
-  ];
-
-  const randomTagline = useMemo(() => {
-    return taglines[Math.floor(Math.random() * taglines.length)];
-  }, []);
-
   return (
     <div className="space-y-24">
 
-      {/* Hero Section */}
-      <section className="relative w-full rounded-3xl overflow-hidden shadow-lg">
-        <img
-          src="/images/hero-truck.jpg"
-          alt="Independent driver truck"
-          className="h-[420px] w-full object-cover"
-        />
+      {/* HERO SECTION */}
+      <section className="mx-auto max-w-7xl px-6 pt-10">
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:items-center">
 
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center px-6">
+          {/* Left Text */}
+          <div>
+            <h1 className="text-4xl font-bold text-slate-900 md:text-5xl">
+              AI‑Powered Junk & Waste Transportation
+            </h1>
 
-          <h1 className="text-4xl md:text-5xl font-bold text-white drop-shadow-lg">
-            AI‑Powered Junk & Waste Transportation
-          </h1>
+            <p className="mt-6 text-lg text-slate-600">
+              Fast, safe, reliable curbside pickup from verified Independent Drivers.
+            </p>
 
-          <p className="mt-4 max-w-2xl text-lg text-slate-200 drop-shadow">
-            Fast, safe, reliable curbside pickup from verified Independent Drivers.
-          </p>
+            <div className="mt-8 flex flex-wrap gap-4">
+              <a
+                href="/request"
+                className="rounded-lg bg-emerald-600 px-6 py-3 text-white hover:bg-emerald-700"
+              >
+                Book a Pickup
+              </a>
 
-          {/* CTA Buttons */}
-          <div className="mt-8 flex flex-col md:flex-row gap-4">
-            <a
-              href="/users"
-              className="rounded-xl bg-emerald-600 px-8 py-3 text-white font-semibold shadow hover:bg-emerald-700"
-            >
-              Book a Pickup
-            </a>
+              <a
+                href="/download"
+                className="rounded-lg border border-emerald-600 px-6 py-3 text-emerald-700 hover:bg-emerald-50"
+              >
+                Download the App
+              </a>
+            </div>
 
-            <a
-              href="/download"
-              className="rounded-xl border border-white px-8 py-3 text-white font-semibold hover:bg-white/20"
-            >
-              Download the App
-            </a>
+            <p className="mt-10 text-xl font-semibold text-slate-900">
+              Your Truck + Our App = A More Efficient Marketplace.
+            </p>
           </div>
 
-          {/* Random tagline */}
-          <p className="mt-6 text-slate-200 text-lg italic drop-shadow">
-            {randomTagline}
-          </p>
+          {/* Right Image */}
+          <div className="relative h-72 w-full md:h-96">
+            <Image
+              src="/images/hero-waste-driver.jpg"
+              alt="Curbside waste ready for pickup"
+              fill
+              className="rounded-2xl object-cover shadow-lg"
+              priority
+            />
+          </div>
         </div>
       </section>
 
-      {/* Counters */}
-      <section className="grid grid-cols-1 gap-8 sm:grid-cols-3 text-center">
-        <div>
-          <p className="text-sm text-slate-500">CO₂e Saved</p>
-          <p className="text-3xl font-bold text-slate-900">XX,XXX kg</p>
-        </div>
-        <div>
-          <p className="text-sm text-slate-500">Loads Moved</p>
-          <p className="text-3xl font-bold text-slate-900">X,XXX+</p>
-        </div>
-        <div>
-          <p className="text-sm text-slate-500">Active Drivers</p>
-          <p className="text-3xl font-bold text-slate-900">XXX+</p>
+      {/* METRICS SECTION */}
+      <section className="mx-auto max-w-7xl px-6">
+        <div className="grid grid-cols-1 gap-10 text-center md:grid-cols-3">
+
+          <div>
+            <h3 className="text-3xl font-bold text-emerald-600">XX,XXX kg</h3>
+            <p className="mt-2 text-slate-600">CO₂e Saved</p>
+          </div>
+
+          <div>
+            <h3 className="text-3xl font-bold text-emerald-600">X,XXX+</h3>
+            <p className="mt-2 text-slate-600">Loads Moved</p>
+          </div>
+
+          <div>
+            <h3 className="text-3xl font-bold text-emerald-600">XXX+</h3>
+            <p className="mt-2 text-slate-600">Active Drivers</p>
+          </div>
+
         </div>
       </section>
 
-      {/* Curbside Waste Banner */}
-      <section className="relative h-64 w-full overflow-hidden rounded-3xl shadow-lg">
-        <img
-          src="/images/hero-curbside.jpg"
-          alt="Curbside waste ready for pickup"
-          className="h-full w-full object-cover"
-        />
-      </section>
+      {/* WHY USERS CHOOSE WASTE DRIVER */}
+      <section className="mx-auto max-w-7xl px-6">
+        <h2 className="text-3xl font-bold text-slate-900">Why Users Choose Waste Driver</h2>
 
-      {/* Why Users Choose Waste Driver */}
-      <section>
-        <h2 className="text-3xl font-bold text-slate-900 text-center">
-          Why Users Choose Waste Driver
-        </h2>
-
-        <p className="mt-3 text-center text-slate-600 max-w-2xl mx-auto">
+        <p className="mt-4 max-w-3xl text-slate-600">
           Our AI‑enhanced marketplace lowers User costs by 30–40% while protecting Driver revenue.
         </p>
 
-        <div className="mt-12 grid gap-8 md:grid-cols-3">
+        <div className="mt-10 grid grid-cols-1 gap-10 md:grid-cols-3">
 
-          <div className="rounded-2xl border p-6 shadow-sm hover:shadow-md transition">
+          <div className="rounded-xl border bg-white p-6 shadow-sm">
             <h3 className="text-xl font-semibold text-slate-900">30–40% Lower Cost</h3>
-            <p className="mt-2 text-slate-600">
+            <p className="mt-3 text-slate-600">
               Lower than 1‑800 junk removal companies — without reducing Driver revenue.
             </p>
           </div>
 
-          <div className="rounded-2xl border p-6 shadow-sm hover:shadow-md transition">
+          <div className="rounded-xl border bg-white p-6 shadow-sm">
             <h3 className="text-xl font-semibold text-slate-900">Fast Pickup</h3>
-            <p className="mt-2 text-slate-600">
+            <p className="mt-3 text-slate-600">
               Real‑time matching with verified Independent Drivers.
             </p>
           </div>
 
-          <div className="rounded-2xl border p-6 shadow-sm hover:shadow-md transition">
+          <div className="rounded-xl border bg-white p-6 shadow-sm">
             <h3 className="text-xl font-semibold text-slate-900">Quotes Before Accepting Jobs</h3>
-            <p className="mt-2 text-slate-600">
+            <p className="mt-3 text-slate-600">
               Users receive quotes upfront — no hidden fees.
             </p>
           </div>
@@ -123,65 +109,99 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Canada Map Section */}
-      <section className="max-w-5xl mx-auto">
-        <h2 className="text-3xl font-bold text-slate-900 text-center">
-          Our Canadian Network
-        </h2>
+      {/* CANADIAN NETWORK */}
+      <section className="mx-auto max-w-7xl px-6">
+        <h2 className="text-3xl font-bold text-slate-900">Our Canadian Network</h2>
 
-        <p className="mt-3 text-center text-slate-600 max-w-2xl mx-auto">
+        <p className="mt-4 max-w-3xl text-slate-600">
           Waste Driver operates across Canada with verified Independent Drivers in major cities.
         </p>
 
-        <div className="mt-12">
+        <div className="mt-10">
           <CanadaMap />
         </div>
       </section>
 
-      {/* How It Works */}
-      <section>
-        <h2 className="text-3xl font-bold text-slate-900 text-center">How It Works</h2>
+      {/* CITY LIST */}
+      <section className="mx-auto max-w-7xl px-6">
+        <h3 className="text-xl font-semibold text-slate-900 mb-4">Cities Served</h3>
 
-        <ol className="mt-10 space-y-8 max-w-2xl mx-auto text-slate-700">
-
-          <li>
-            <p className="text-xl font-semibold text-slate-900">1. Snap a Photo</p>
-            <p className="mt-1">Upload photos of what you need removed.</p>
-          </li>
-
-          <li>
-            <p className="text-xl font-semibold text-slate-900">2. Receive Driver Quotes</p>
-            <p className="mt-1">Drivers review your photos and send quotes directly to your phone.</p>
-          </li>
-
-          <li>
-            <p className="text-xl font-semibold text-slate-900">3. Accept a Quote & Book the Service</p>
-            <p className="mt-1">Choose the best quote and confirm the pickup instantly.</p>
-          </li>
-
-          <li>
-            <p className="text-xl font-semibold text-slate-900">4. Responsible Disposal</p>
-            <p className="mt-1">
-              Driver routes are tracked to confirm arrival at the landfill or recycling facility.
-            </p>
-          </li>
-
-        </ol>
+        <ul className="grid grid-cols-2 gap-3 text-slate-700 md:grid-cols-3">
+          <li>Vancouver</li>
+          <li>Kelowna</li>
+          <li>Edmonton</li>
+          <li>Calgary</li>
+          <li>Saskatoon</li>
+          <li>Regina</li>
+          <li>Winnipeg</li>
+          <li>Toronto</li>
+          <li>Hamilton</li>
+          <li>Ottawa</li>
+          <li>Montreal</li>
+          <li>Quebec City</li>
+        </ul>
       </section>
 
-      {/* CTA Section */}
-      <section className="rounded-3xl bg-emerald-600 px-10 py-16 text-center text-white shadow-lg">
-        <h2 className="text-3xl font-bold">Ready to Clean Up Your Space?</h2>
-        <p className="mt-3 text-lg text-emerald-100">
+      {/* HOW IT WORKS */}
+      <section className="mx-auto max-w-7xl px-6 pb-20">
+        <h2 className="text-3xl font-bold text-slate-900">How It Works</h2>
+
+        <div className="mt-10 grid grid-cols-1 gap-10 md:grid-cols-4">
+
+          <div className="rounded-xl border bg-white p-6 shadow-sm">
+            <h3 className="text-xl font-semibold text-slate-900">1. Snap a Photo</h3>
+            <p className="mt-3 text-slate-600">
+              Upload photos of what you need removed.
+            </p>
+          </div>
+
+          <div className="rounded-xl border bg-white p-6 shadow-sm">
+            <h3 className="text-xl font-semibold text-slate-900">2. Receive Driver Quotes</h3>
+            <p className="mt-3 text-slate-600">
+              Drivers review your photos and send quotes directly to your phone.
+            </p>
+          </div>
+
+          <div className="rounded-xl border bg-white p-6 shadow-sm">
+            <h3 className="text-xl font-semibold text-slate-900">3. Accept a Quote & Book</h3>
+            <p className="mt-3 text-slate-600">
+              Choose the best quote and confirm the pickup instantly.
+            </p>
+          </div>
+
+          <div className="rounded-xl border bg-white p-6 shadow-sm">
+            <h3 className="text-xl font-semibold text-slate-900">4. Responsible Disposal</h3>
+            <p className="mt-3 text-slate-600">
+              Driver routes are tracked to confirm arrival at the landfill or recycling facility.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      {/* CTA SECTION */}
+      <section className="mx-auto max-w-7xl px-6 pb-20 text-center">
+        <h2 className="text-3xl font-bold text-slate-900">Ready to Clean Up Your Space?</h2>
+
+        <p className="mt-4 text-slate-600">
           Book a pickup today and keep your home and neighbourhood looking great.
         </p>
 
-        <a
-          href="/users"
-          className="mt-8 inline-block rounded-xl bg-white px-8 py-3 text-emerald-700 font-semibold shadow hover:bg-slate-100"
-        >
-          Book a Pickup
-        </a>
+        <div className="mt-8 flex flex-wrap justify-center gap-4">
+          <a
+            href="/request"
+            className="rounded-lg bg-emerald-600 px-6 py-3 text-white hover:bg-emerald-700"
+          >
+            Book a Pickup
+          </a>
+
+          <a
+            href="/contact"
+            className="rounded-lg border border-emerald-600 px-6 py-3 text-emerald-700 hover:bg-emerald-50"
+          >
+            Contact Us
+          </a>
+        </div>
       </section>
 
     </div>
