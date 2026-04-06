@@ -14,6 +14,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        {/* ✅ Custom WD favicon */}
+        <link rel="icon" href="/favicon.png" sizes="any" />
+        <meta name="theme-color" content="#10b981" />
+        <title>Waste Driver Inc. – AI‑Powered Junk & Waste Transportation</title>
+        <meta
+          name="description"
+          content="Waste Driver connects Users with verified Independent Drivers for fast, affordable, environmentally responsible junk removal."
+        />
+      </head>
+
       <body className="bg-white text-slate-900">
         <Header />
         <main className="mx-auto max-w-7xl px-6 py-10">{children}</main>
