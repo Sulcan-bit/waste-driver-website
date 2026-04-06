@@ -36,6 +36,11 @@ export default function DriversPage() {
           <p>Your Truck + Our App = A More Efficient Marketplace for Users and Independent Drivers.</p>
           <p>Waste Driver — the Uber for waste drivers.</p>
           <p>We’re looking for Independent Drivers as partners.</p>
+
+          {/* NEW TAGLINE */}
+          <p className="font-semibold text-slate-800">
+            We share the same big‑company competitors — Waste Driver is built to help Independent Drivers win.
+          </p>
         </div>
       </section>
 

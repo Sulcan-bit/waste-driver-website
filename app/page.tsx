@@ -21,22 +21,16 @@ export default function HomePage() {
 
             <div className="mt-8 flex flex-wrap gap-4">
               <a
-                href="/request"
-                className="rounded-lg bg-emerald-600 px-6 py-3 text-white hover:bg-emerald-700"
-              >
-                Book a Pickup
-              </a>
-
-              <a
                 href="/download"
-                className="rounded-lg border border-emerald-600 px-6 py-3 text-emerald-700 hover:bg-emerald-50"
+                className="rounded-lg bg-emerald-600 px-6 py-3 text-white hover:bg-emerald-700"
               >
                 Download the App
               </a>
             </div>
 
+            {/* NEW TAGLINE */}
             <p className="mt-10 text-xl font-semibold text-slate-900">
-              Your Truck + Our App = A More Efficient Marketplace.
+              Your success is our success — we grow by helping Independent Drivers earn more with less hassle.
             </p>
           </div>
 
@@ -110,17 +104,19 @@ export default function HomePage() {
       </section>
 
       {/* CANADIAN NETWORK */}
-      <section className="mx-auto max-w-7xl px-6">
-        <h2 className="text-3xl font-bold text-slate-900">Our Canadian Network</h2>
+      <section className="w-full">
+        <div className="mx-auto max-w-7xl px-0 md:px-6">
+          <h2 className="text-3xl font-bold text-slate-900">Our Canadian Network</h2>
 
-        <p className="mt-4 max-w-3xl text-slate-600">
-          Waste Driver operates across Canada with verified Independent Drivers in major cities.
-        </p>
+          <p className="mt-4 max-w-3xl text-slate-600">
+            Waste Driver operates across Canada with verified Independent Drivers in major cities.
+          </p>
 
-        {/* Mobile‑friendly, zoomable map container */}
-        <div className="mt-10 w-full overflow-auto touch-pan-y touch-pan-x">
-          <div className="min-w-[800px]">
-            <CanadaMap />
+          {/* Full‑width mobile map, scrollable + zoomable */}
+          <div className="mt-10 w-full overflow-auto touch-pan-y touch-pan-x">
+            <div className="min-w-[800px]">
+              <CanadaMap />
+            </div>
           </div>
         </div>
       </section>
@@ -187,15 +183,15 @@ export default function HomePage() {
         <h2 className="text-3xl font-bold text-slate-900">Ready to Clean Up Your Space?</h2>
 
         <p className="mt-4 text-slate-600">
-          Book a pickup today and keep your home and neighbourhood looking great.
+          Download the app to request pickups, receive quotes, and manage your profile.
         </p>
 
         <div className="mt-8 flex flex-wrap justify-center gap-4">
           <a
-            href="/request"
+            href="/download"
             className="rounded-lg bg-emerald-600 px-6 py-3 text-white hover:bg-emerald-700"
           >
-            Book a Pickup
+            Download the App
           </a>
 
           <a
