@@ -19,7 +19,10 @@ const cities: City[] = [
   { name: "Kelowna", x: 220, y: 270, r: 4, labelX: 230, labelY: 265, labelSize: 9 },
   { name: "Edmonton", x: 310, y: 240, r: 4, labelX: 320, labelY: 235, labelSize: 9 },
   { name: "Calgary", x: 320, y: 270, r: 6, hq: true, labelX: 332, labelY: 268, labelSize: 10 },
-  { name: "Saskatoon", x: 380, y: 250, r: 4, labelX: 390, y: 245, labelSize: 9 },
+
+  // ✅ FIXED Saskatoon line
+  { name: "Saskatoon", x: 380, y: 250, r: 4, labelX: 390, labelY: 245, labelSize: 9 },
+
   { name: "Regina", x: 390, y: 270, r: 4, labelX: 400, labelY: 265, labelSize: 9 },
   { name: "Winnipeg", x: 440, y: 260, r: 4, labelX: 450, labelY: 255, labelSize: 9 },
   { name: "Toronto", x: 560, y: 270, r: 4, labelX: 570, labelY: 265, labelSize: 9 },
