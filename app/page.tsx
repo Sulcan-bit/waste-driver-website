@@ -43,7 +43,7 @@ export default function HomePage() {
           {/* Right Image */}
           <div className="relative h-72 w-full md:h-96">
             <Image
-              src="/images/hero-waste-driver.jpg"
+              src="/images/hero-curbside.jpg"
               alt="Curbside waste ready for pickup"
               fill
               className="rounded-2xl object-cover shadow-lg"
@@ -117,8 +117,11 @@ export default function HomePage() {
           Waste Driver operates across Canada with verified Independent Drivers in major cities.
         </p>
 
-        <div className="mt-10">
-          <CanadaMap />
+        {/* Mobile‑friendly, zoomable map container */}
+        <div className="mt-10 w-full overflow-auto touch-pan-y touch-pan-x">
+          <div className="min-w-[800px]">
+            <CanadaMap />
+          </div>
         </div>
       </section>
 
