@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { UserProfileForm } from "../../../components/user/UserProfileForm";
 import { UserProfileFormValues } from "../../../../shared/userProfileValidation";
 
 type UserProfile = {
@@ -89,12 +88,10 @@ export default function UserProfilePage() {
     <div className="max-w-xl mx-auto mt-20 p-6 space-y-10">
       <h1 className="text-3xl font-bold">Your Profile</h1>
 
-      {/* Profile Form */}
-      <UserProfileForm
-        onSubmit={handleSubmit}
-        submitting={submitting}
-        initialValues={user}
-      />
+      {/* TEMPORARY: Form removed because component does not exist */}
+      <div className="p-4 border rounded-xl bg-yellow-50 text-yellow-800">
+        Profile editing form is temporarily unavailable.
+      </div>
 
       {/* Verification Status */}
       <section className="space-y-4">
@@ -130,10 +127,7 @@ export default function UserProfilePage() {
         {user.hasPaymentMethod ? (
           <p className="text-emerald-600 font-semibold">Card on file</p>
         ) : (
-          <a
-            href="/users/payment-method"
-            className="text-red-600 underline"
-          >
+          <a href="/users/payment-method" className="text-red-600 underline">
             No card added — add payment method
           </a>
         )}
