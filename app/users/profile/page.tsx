@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { UserProfileFormValues } from "../../../../shared/userProfileValidation";
+import { UserProfileFormValues } from "@/shared/userProfileValidation";
 
 type UserProfile = {
   firstName: string;
