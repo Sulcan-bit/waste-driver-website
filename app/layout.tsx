@@ -1,4 +1,4 @@
-// app\layout.tsx
+// app/layout.tsx
 
 import "./globals.css";
 import Header from "@/components/Header";
@@ -20,27 +20,40 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-white text-slate-900">
+      <body className="bg-gradient-to-br from-white via-slate-50 to-emerald-50 text-slate-900 antialiased">
         <Header />
-        <main className="mx-auto max-w-7xl px-6 py-10">{children}</main>
+
+        {/* MAIN CONTENT WRAPPER */}
+        <main className="mx-auto max-w-7xl px-6 py-16">
+          {children}
+        </main>
+
         <Footer />
       </body>
     </html>
   );
 }
 
+/* -------------------------------------------------------------------------- */
+/*                                PREMIUM FOOTER                               */
+/* -------------------------------------------------------------------------- */
+
 function Footer() {
   return (
-    <footer className="mt-32 border-t bg-gradient-to-b from-white to-slate-50">
-      <div className="mx-auto max-w-7xl px-6 py-12 text-sm text-slate-600">
-        <div className="mb-10">
-          <h3 className="text-lg font-semibold text-slate-900">Contact Us</h3>
+    <footer className="mt-40 border-t bg-gradient-to-b from-white to-slate-100/60 backdrop-blur-xl">
+      <div className="mx-auto max-w-7xl px-6 py-16 text-sm text-slate-600">
 
-          <p className="mt-2">
+        {/* CONTACT BLOCK */}
+        <div className="mb-12">
+          <h3 className="text-xl font-semibold text-slate-900 tracking-tight">
+            Contact Us
+          </h3>
+
+          <p className="mt-3">
             Phone:{" "}
             <a
               href="tel:18339992783"
-              className="font-medium text-emerald-700 hover:underline"
+              className="font-medium text-emerald-700 hover:text-emerald-800 transition-colors"
             >
               1‑833‑99‑WASTE
             </a>
@@ -50,13 +63,14 @@ function Footer() {
             Email:{" "}
             <a
               href="mailto:info@wastedriver.com"
-              className="text-emerald-700 hover:underline"
+              className="text-emerald-700 hover:text-emerald-800 transition-colors"
             >
               info@wastedriver.com
             </a>
           </p>
         </div>
 
+        {/* COPYRIGHT */}
         <p className="text-slate-500">
           © {new Date().getFullYear()} Waste Driver Inc. All rights reserved.
         </p>
