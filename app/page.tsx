@@ -3,44 +3,43 @@ import { CanadaMap } from "@/components/CanadaMap";
 
 export default function HomePage() {
   return (
-    <div className="space-y-24">
+    <div className="space-y-28">
 
       {/* HERO SECTION */}
-      <section className="mx-auto max-w-7xl px-6 pt-10">
+      <section className="mx-auto max-w-7xl px-6 pt-12">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:items-center">
 
-          {/* Left Text */}
+          {/* LEFT TEXT */}
           <div>
-            <h1 className="text-4xl font-bold text-slate-900 md:text-5xl">
+            <h1 className="text-4xl font-bold text-slate-900 md:text-5xl leading-tight">
               AI‑Powered Junk & Waste Transportation
             </h1>
 
-            <p className="mt-6 text-lg text-slate-600">
+            <p className="mt-6 text-lg text-slate-600 max-w-xl">
               Fast, safe, reliable curbside pickup from verified Independent Drivers.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
               <a
                 href="/download"
-                className="rounded-lg bg-emerald-600 px-6 py-3 text-white hover:bg-emerald-700"
+                className="rounded-xl bg-emerald-600 px-6 py-3 text-white font-semibold shadow hover:bg-emerald-700 transition"
               >
                 Download the App
               </a>
             </div>
 
-            {/* NEW TAGLINE */}
-            <p className="mt-10 text-xl font-semibold text-slate-900">
+            <p className="mt-10 text-xl font-semibold text-slate-900 max-w-xl">
               A more efficient alternative to big junk haulers — lower User costs without reducing Independent Driver earnings.
             </p>
           </div>
 
-          {/* Right Image */}
+          {/* RIGHT IMAGE */}
           <div className="relative h-72 w-full md:h-96">
             <Image
               src="/images/hero-curbside.jpg"
               alt="Curbside waste ready for pickup"
               fill
-              className="rounded-2xl object-cover shadow-lg"
+              className="rounded-2xl object-cover shadow-xl"
               priority
             />
           </div>
@@ -52,17 +51,17 @@ export default function HomePage() {
         <div className="grid grid-cols-1 gap-10 text-center md:grid-cols-3">
 
           <div>
-            <h3 className="text-3xl font-bold text-emerald-600">XX,XXX kg</h3>
+            <h3 className="text-4xl font-bold text-emerald-600">XX,XXX kg</h3>
             <p className="mt-2 text-slate-600">CO₂e Saved</p>
           </div>
 
           <div>
-            <h3 className="text-3xl font-bold text-emerald-600">X,XXX+</h3>
+            <h3 className="text-4xl font-bold text-emerald-600">X,XXX+</h3>
             <p className="mt-2 text-slate-600">Loads Moved</p>
           </div>
 
           <div>
-            <h3 className="text-3xl font-bold text-emerald-600">XXX+</h3>
+            <h3 className="text-4xl font-bold text-emerald-600">XXX+</h3>
             <p className="mt-2 text-slate-600">Active Drivers</p>
           </div>
 
@@ -77,23 +76,23 @@ export default function HomePage() {
           Our AI‑enhanced marketplace lowers User costs by 30–40% while protecting Driver revenue.
         </p>
 
-        <div className="mt-10 grid grid-cols-1 gap-10 md:grid-cols-3">
+        <div className="mt-12 grid grid-cols-1 gap-10 md:grid-cols-3">
 
-          <div className="rounded-xl border bg-white p-6 shadow-sm">
+          <div className="rounded-2xl border bg-white p-6 shadow-sm hover:shadow-md transition">
             <h3 className="text-xl font-semibold text-slate-900">30–40% Lower Cost</h3>
             <p className="mt-3 text-slate-600">
               Lower than 1‑800 junk removal companies — without reducing Driver revenue.
             </p>
           </div>
 
-          <div className="rounded-xl border bg-white p-6 shadow-sm">
+          <div className="rounded-2xl border bg-white p-6 shadow-sm hover:shadow-md transition">
             <h3 className="text-xl font-semibold text-slate-900">Fast Pickup</h3>
             <p className="mt-3 text-slate-600">
               Real‑time matching with verified Independent Drivers.
             </p>
           </div>
 
-          <div className="rounded-xl border bg-white p-6 shadow-sm">
+          <div className="rounded-2xl border bg-white p-6 shadow-sm hover:shadow-md transition">
             <h3 className="text-xl font-semibold text-slate-900">Quotes Before Accepting Jobs</h3>
             <p className="mt-3 text-slate-600">
               Users receive quotes upfront — no hidden fees.
@@ -112,7 +111,6 @@ export default function HomePage() {
             Waste Driver operates across Canada with verified Independent Drivers in major cities.
           </p>
 
-          {/* Full‑width mobile map, scrollable + zoomable */}
           <div className="mt-10 w-full overflow-auto touch-pan-y touch-pan-x">
             <div className="min-w-[800px]">
               <CanadaMap />
@@ -142,36 +140,38 @@ export default function HomePage() {
       </section>
 
       {/* HOW IT WORKS */}
-      <section className="mx-auto max-w-7xl px-6 pb-20">
+      <section className="mx-auto max-w-7xl px-6 pb-24">
         <h2 className="text-3xl font-bold text-slate-900">How It Works</h2>
 
-        <div className="mt-10 grid grid-cols-1 gap-10 md:grid-cols-4">
+        <div className="mt-12 grid grid-cols-1 gap-10 md:grid-cols-4">
 
-          <div className="rounded-xl border bg-white p-6 shadow-sm">
+          <div className="rounded-2xl border bg-white p-6 shadow-sm hover:shadow-md transition">
             <h3 className="text-xl font-semibold text-slate-900">1. Snap a Photo</h3>
             <p className="mt-3 text-slate-600">
               Upload photos of what you need removed.
             </p>
           </div>
 
-          <div className="rounded-xl border bg-white p-6 shadow-sm">
+          <div className="rounded-2xl border bg-white p-6 shadow-sm hover:shadow-md transition">
             <h3 className="text-xl font-semibold text-slate-900">2. Receive Driver Quotes</h3>
             <p className="mt-3 text-slate-600">
               Drivers review your photos and send quotes directly to your phone.
             </p>
           </div>
 
-          <div className="rounded-xl border bg-white p-6 shadow-sm">
+          <div className="rounded-2xl border bg-white p-6 shadow-sm hover:shadow-md transition">
             <h3 className="text-xl font-semibold text-slate-900">3. Accept a Quote & Book</h3>
             <p className="mt-3 text-slate-600">
-              Choose the best quote and confirm the pickup instantly.
+              Choose the best quote and confirm instantly.  
+              You can reject any quote and wait for another Driver.
             </p>
           </div>
 
-          <div className="rounded-xl border bg-white p-6 shadow-sm">
+          <div className="rounded-2xl border bg-white p-6 shadow-sm hover:shadow-md transition">
             <h3 className="text-xl font-semibold text-slate-900">4. Responsible Disposal</h3>
             <p className="mt-3 text-slate-600">
-              Driver routes are tracked to confirm arrival at the landfill or recycling facility.
+              Driver routes are tracked to confirm arrival at approved landfill or recycling facilities.  
+              Photos are taken at Quote, Arrival, and Completion for transparency and dispute protection.
             </p>
           </div>
 
@@ -179,7 +179,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA SECTION */}
-      <section className="mx-auto max-w-7xl px-6 pb-20 text-center">
+      <section className="mx-auto max-w-7xl px-6 pb-24 text-center">
         <h2 className="text-3xl font-bold text-slate-900">Ready to Clean Up Your Space?</h2>
 
         <p className="mt-4 text-slate-600">
@@ -189,14 +189,14 @@ export default function HomePage() {
         <div className="mt-8 flex flex-wrap justify-center gap-4">
           <a
             href="/download"
-            className="rounded-lg bg-emerald-600 px-6 py-3 text-white hover:bg-emerald-700"
+            className="rounded-xl bg-emerald-600 px-6 py-3 text-white font-semibold shadow hover:bg-emerald-700 transition"
           >
             Download the App
           </a>
 
           <a
             href="/contact"
-            className="rounded-lg border border-emerald-600 px-6 py-3 text-emerald-700 hover:bg-emerald-50"
+            className="rounded-xl border border-emerald-600 px-6 py-3 text-emerald-700 font-semibold hover:bg-emerald-50 transition"
           >
             Contact Us
           </a>

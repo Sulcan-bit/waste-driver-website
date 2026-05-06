@@ -1,3 +1,5 @@
+// app\drivers\onboarding\page.tsx
+
 "use client";
 
 import React, { useState } from "react";
