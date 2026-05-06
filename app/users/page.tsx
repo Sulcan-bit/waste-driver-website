@@ -289,9 +289,10 @@ export default function UsersPage() {
 
       {/* SMS COMPLIANCE LINK */}
       <p className="text-center text-sm text-slate-500">
-        <a href="/sms-user" className="text-emerald-700 hover:underline">
-          User SMS Messaging Policy
-        </a>
+        <a href="/sms-compliance" className="text-emerald-700 hover:underline">
+  User SMS Messaging Policy
+</a>
+
       </p>
 
     </div>

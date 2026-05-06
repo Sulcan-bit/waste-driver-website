@@ -192,9 +192,10 @@ export default function DriversPage() {
       {/* SMS COMPLIANCE LINK — Correct for Drivers                              */}
       {/* ---------------------------------------------------------------------- */}
       <p className="text-center text-sm text-slate-500">
-        <a href="/sms-driver" className="text-emerald-700 hover:underline">
-          Driver SMS Messaging Policy
-        </a>
+        <a href="/sms-compliance" className="text-emerald-700 hover:underline">
+  Driver SMS Messaging Policy
+</a>
+
       </p>
 
     </div>
