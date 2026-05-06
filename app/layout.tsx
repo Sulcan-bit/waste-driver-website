@@ -31,13 +31,21 @@ export default function RootLayout({
 
 function Footer() {
   return (
-    <footer className="mt-20 border-t bg-slate-50">
-      <div className="mx-auto max-w-7xl px-6 py-10 text-sm text-slate-600">
+    <footer className="mt-32 border-t bg-gradient-to-b from-white to-slate-50">
+      <div className="mx-auto max-w-7xl px-6 py-12 text-sm text-slate-600">
         <div className="mb-10">
           <h3 className="text-lg font-semibold text-slate-900">Contact Us</h3>
+
           <p className="mt-2">
-            Phone: <span className="font-medium">1‑8‑WD‑875‑4000</span>
+            Phone:{" "}
+            <a
+              href="tel:18339992783"
+              className="font-medium text-emerald-700 hover:underline"
+            >
+              1‑833‑99‑WASTE
+            </a>
           </p>
+
           <p className="mt-1">
             Email:{" "}
             <a
@@ -49,8 +57,11 @@ function Footer() {
           </p>
         </div>
 
-        <p>© {new Date().getFullYear()} Waste Driver Inc. All rights reserved.</p>
+        <p className="text-slate-500">
+          © {new Date().getFullYear()} Waste Driver Inc. All rights reserved.
+        </p>
       </div>
     </footer>
   );
 }
+

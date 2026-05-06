@@ -1,3 +1,5 @@
+// waste-driver-website\components\Header.tsx
+
 "use client";
 
 import { useState } from "react";
@@ -50,7 +52,7 @@ export default function Header() {
           <a href="/technology" className="block hover:text-emerald-600">Technology</a>
           <a href="/contact" className="block hover:text-emerald-600">Contact</a>
 
-          <span className="block text-slate-700 font-semibold">1‑8‑WD‑875‑4000</span>
+          <span className="block text-slate-700 font-semibold">1‑833‑99‑WASTE</span>
 
           <a href="/download" className="block rounded-lg bg-emerald-600 px-4 py-2 text-white hover:bg-emerald-700">
             Download App
