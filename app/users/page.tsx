@@ -1,96 +1,105 @@
 export default function UsersPage() {
   return (
-    <div className="space-y-28">
+    <div className="space-y-48">
 
-      {/* HERO SECTION */}
-      <section className="flex flex-col items-center text-center px-6">
-        <h1 className="text-4xl font-bold text-slate-900 md:text-5xl leading-tight">
-          Fast, Affordable Junk Removal — Powered by AI
-        </h1>
+      {/* ---------------------------------------------------------------------- */}
+      {/* HERO SECTION — Premium Tech Marketplace                                */}
+      {/* ---------------------------------------------------------------------- */}
+      <section className="relative overflow-hidden">
+        {/* Atmospheric Gradient Background */}
+        <div className="absolute inset-0 bg-gradient-to-br from-emerald-100 via-white to-slate-100 opacity-90" />
 
-        <p className="mt-4 max-w-2xl text-lg text-slate-600">
-          Waste Driver connects Users with verified Independent Drivers for the lowest cost,
-          fast, safe, reliable, and accountable curbside or alley pickup service.
-        </p>
+        <div className="relative mx-auto max-w-5xl px-6 pt-32 pb-32 text-center">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-slate-900 leading-tight">
+            Fast, Affordable Junk Removal — Powered by AI
+          </h1>
 
-        <p className="mt-4 max-w-2xl text-slate-700">
-          Our marketplace ensures proper disposal, transparent pricing, and a trusted experience
-          backed by photos and route verification.
-        </p>
+          <p className="mt-8 text-xl text-slate-600 leading-relaxed max-w-3xl mx-auto">
+            Waste Driver connects Users with verified Independent Drivers for the lowest cost,
+            fast, safe, reliable, and accountable curbside or alley pickup service.
+          </p>
 
-        {/* CTA BUTTONS */}
-        <div className="mt-8 flex flex-col md:flex-row gap-4">
-          <a
-            href="/download"
-            className="rounded-xl bg-emerald-600 px-8 py-3 text-white font-semibold shadow hover:bg-emerald-700 transition"
-          >
-            Download the App
-          </a>
+          <p className="mt-6 text-lg text-slate-700 leading-relaxed max-w-3xl mx-auto">
+            Our marketplace ensures proper disposal, transparent pricing, and a trusted experience
+            backed by photos and route verification.
+          </p>
 
-          <a
-            href="/signup"
-            className="rounded-xl border border-emerald-600 px-8 py-3 text-emerald-700 font-semibold hover:bg-emerald-50 transition"
-          >
-            Create Profile
-          </a>
+          {/* CTA BUTTONS */}
+          <div className="mt-12 flex flex-wrap justify-center gap-4">
+            <a
+              href="/download"
+              className="rounded-xl bg-emerald-600 px-8 py-4 text-white text-lg font-semibold shadow-lg hover:bg-emerald-700 transition"
+            >
+              Download the App
+            </a>
+
+            <a
+              href="/signup"
+              className="rounded-xl border border-emerald-600 px-8 py-4 text-emerald-700 text-lg font-semibold hover:bg-emerald-50 transition"
+            >
+              Create Profile
+            </a>
+          </div>
         </div>
       </section>
 
-      {/* WHY USERS TRUST WASTE DRIVER */}
-      <section className="px-6">
-        <h2 className="text-3xl font-bold text-slate-900 text-center">
+      {/* ---------------------------------------------------------------------- */}
+      {/* WHY USERS TRUST WASTE DRIVER — Premium Cards                           */}
+      {/* ---------------------------------------------------------------------- */}
+      <section className="mx-auto max-w-7xl px-6">
+        <h2 className="text-5xl font-bold text-slate-900 text-center">
           Why Users Trust Waste Driver
         </h2>
 
-        <p className="mt-3 text-center text-slate-600 max-w-2xl mx-auto">
+        <p className="mt-6 text-center text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
           Waste Driver is built for safety, transparency, and accountability — giving Users a
           trusted alternative to random trucks or unverified junk haulers.
         </p>
 
-        <div className="mt-12 grid gap-8 md:grid-cols-3">
+        <div className="mt-20 grid gap-12 md:grid-cols-3">
 
-          <div className="rounded-2xl border p-6 shadow-sm hover:shadow-md transition">
-            <h3 className="text-xl font-semibold text-slate-900">Verified Drivers Only</h3>
-            <p className="mt-2 text-slate-600">
+          <div className="rounded-3xl bg-white p-10 shadow-xl hover:shadow-2xl transition ring-1 ring-black/5">
+            <h3 className="text-2xl font-semibold text-slate-900">Verified Drivers Only</h3>
+            <p className="mt-4 text-slate-600 text-lg leading-relaxed">
               Every Driver is vetted — license, insurance, registration, and identity verified
               before joining the marketplace.
             </p>
           </div>
 
-          <div className="rounded-2xl border p-6 shadow-sm hover:shadow-md transition">
-            <h3 className="text-xl font-semibold text-slate-900">Photos at Every Stage</h3>
-            <p className="mt-2 text-slate-600">
+          <div className="rounded-3xl bg-white p-10 shadow-xl hover:shadow-2xl transition ring-1 ring-black/5">
+            <h3 className="text-2xl font-semibold text-slate-900">Photos at Every Stage</h3>
+            <p className="mt-4 text-slate-600 text-lg leading-relaxed">
               Photos are taken at Quote, Arrival, and Completion — stored securely for
               transparency and dispute protection.
             </p>
           </div>
 
-          <div className="rounded-2xl border p-6 shadow-sm hover:shadow-md transition">
-            <h3 className="text-xl font-semibold text-slate-900">Address Protected</h3>
-            <p className="mt-2 text-slate-600">
+          <div className="rounded-3xl bg-white p-10 shadow-xl hover:shadow-2xl transition ring-1 ring-black/5">
+            <h3 className="text-2xl font-semibold text-slate-900">Address Protected</h3>
+            <p className="mt-4 text-slate-600 text-lg leading-relaxed">
               Drivers never receive your pickup address until you accept their quote and they
               start the job — ensuring privacy and safety.
             </p>
           </div>
 
-          <div className="rounded-2xl border p-6 shadow-sm hover:shadow-md transition">
-            <h3 className="text-xl font-semibold text-slate-900">Proper Disposal Guaranteed</h3>
-            <p className="mt-2 text-slate-600">
+          <div className="rounded-3xl bg-white p-10 shadow-xl hover:shadow-2xl transition ring-1 ring-black/5">
+            <h3 className="text-2xl font-semibold text-slate-900">Proper Disposal Guaranteed</h3>
+            <p className="mt-4 text-slate-600 text-lg leading-relaxed">
               Driver routes are tracked to confirm arrival at approved landfill and recycling
               facilities — no illegal dumping.
             </p>
           </div>
 
-          <div className="rounded-2xl border p-6 shadow-sm hover:shadow-md transition">
-            <h3 className="text-xl font-semibold text-slate-900">Transparent Pricing</h3>
-            <p className="mt-2 text-slate-600">
+          <div className="rounded-3xl bg-white p-10 shadow-xl hover:shadow-2xl transition ring-1 ring-black/5">
+            <h3 className="text-2xl font-semibold text-slate-900">Transparent Pricing</h3>
+            <p className="mt-4 text-slate-600 text-lg leading-relaxed">
               You see the maximum price before accepting a quote. No hidden fees. No surprises.
             </p>
           </div>
 
-          <div className="rounded-2xl border p-6 shadow-sm hover:shadow-md transition">
-            <h3 className="text-xl font-semibold text-slate-900">You’re Never Obligated</h3>
-            <p className="mt-2 text-slate-600">
+          <div className="rounded-3xl bg-white p-10 shadow-xl hover:shadow-2xl transition ring-1 ring-black/5">
+            <h3 className="text-2xl font-semibold text-slate-900">You’re Never Obligated</h3>
+            <p className="mt-4 text-slate-600 text-lg leading-relaxed">
               Reject any quote and wait for another Driver. Choose the best price and timing
               for your needs.
             </p>
@@ -99,35 +108,37 @@ export default function UsersPage() {
         </div>
       </section>
 
-      {/* WHY USERS CHOOSE WASTE DRIVER (ORIGINAL SECTION) */}
-      <section className="px-6">
-        <h2 className="text-3xl font-bold text-slate-900 text-center">
+      {/* ---------------------------------------------------------------------- */}
+      {/* WHY USERS CHOOSE WASTE DRIVER — Premium Cards                          */}
+      {/* ---------------------------------------------------------------------- */}
+      <section className="mx-auto max-w-7xl px-6">
+        <h2 className="text-5xl font-bold text-slate-900 text-center">
           Why Users Choose Waste Driver
         </h2>
 
-        <p className="mt-3 text-center text-slate-600 max-w-2xl mx-auto">
+        <p className="mt-6 text-center text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
           Our AI‑enhanced marketplace lowers User costs by 30–40% while protecting Driver revenue.
         </p>
 
-        <div className="mt-12 grid gap-8 md:grid-cols-3">
+        <div className="mt-20 grid gap-12 md:grid-cols-3">
 
-          <div className="rounded-2xl border p-6 shadow-sm hover:shadow-md transition">
-            <h3 className="text-xl font-semibold text-slate-900">30–40% Lower Cost</h3>
-            <p className="mt-2 text-slate-600">
+          <div className="rounded-3xl bg-white p-10 shadow-xl hover:shadow-2xl transition ring-1 ring-black/5">
+            <h3 className="text-2xl font-semibold text-slate-900">30–40% Lower Cost</h3>
+            <p className="mt-4 text-slate-600 text-lg leading-relaxed">
               Lower than 1‑800 junk removal companies — without reducing Driver revenue.
             </p>
           </div>
 
-          <div className="rounded-2xl border p-6 shadow-sm hover:shadow-md transition">
-            <h3 className="text-xl font-semibold text-slate-900">Fast Pickup</h3>
-            <p className="mt-2 text-slate-600">
+          <div className="rounded-3xl bg-white p-10 shadow-xl hover:shadow-2xl transition ring-1 ring-black/5">
+            <h3 className="text-2xl font-semibold text-slate-900">Fast Pickup</h3>
+            <p className="mt-4 text-slate-600 text-lg leading-relaxed">
               Real‑time matching with verified Independent Drivers.
             </p>
           </div>
 
-          <div className="rounded-2xl border p-6 shadow-sm hover:shadow-md transition">
-            <h3 className="text-xl font-semibold text-slate-900">Quotes Before Accepting Jobs</h3>
-            <p className="mt-2 text-slate-600">
+          <div className="rounded-3xl bg-white p-10 shadow-xl hover:shadow-2xl transition ring-1 ring-black/5">
+            <h3 className="text-2xl font-semibold text-slate-900">Quotes Before Accepting Jobs</h3>
+            <p className="mt-4 text-slate-600 text-lg leading-relaxed">
               Users receive quotes upfront — no hidden fees.
             </p>
           </div>
@@ -135,35 +146,37 @@ export default function UsersPage() {
         </div>
       </section>
 
-      {/* HOW IT WORKS */}
-      <section className="px-6">
-        <h2 className="text-3xl font-bold text-slate-900 text-center">How It Works</h2>
+      {/* ---------------------------------------------------------------------- */}
+      {/* HOW IT WORKS — Premium List                                           */}
+      {/* ---------------------------------------------------------------------- */}
+      <section className="mx-auto max-w-4xl px-6">
+        <h2 className="text-5xl font-bold text-slate-900 text-center">How It Works</h2>
 
-        <ol className="mt-10 space-y-8 max-w-2xl mx-auto text-slate-700">
+        <ol className="mt-16 space-y-10 text-slate-700 text-lg leading-relaxed">
 
           <li>
-            <p className="text-xl font-semibold text-slate-900">1. Snap a Photo</p>
-            <p className="mt-1">Upload photos of what you need removed.</p>
+            <p className="text-2xl font-semibold text-slate-900">1. Snap a Photo</p>
+            <p className="mt-2">Upload photos of what you need removed.</p>
           </li>
 
           <li>
-            <p className="text-xl font-semibold text-slate-900">2. Receive 1 or More Driver Quotes</p>
-            <p className="mt-1">
+            <p className="text-2xl font-semibold text-slate-900">2. Receive 1 or More Driver Quotes</p>
+            <p className="mt-2">
               Drivers review your photos and send quotes directly to your phone.
             </p>
           </li>
 
           <li>
-            <p className="text-xl font-semibold text-slate-900">3. Accept a Quote & Book the Service</p>
-            <p className="mt-1">
+            <p className="text-2xl font-semibold text-slate-900">3. Accept a Quote & Book the Service</p>
+            <p className="mt-2">
               Choose the best quote and confirm instantly. You can reject any quote and wait
               for another Driver.
             </p>
           </li>
 
           <li>
-            <p className="text-xl font-semibold text-slate-900">4. Responsible Disposal</p>
-            <p className="mt-1">
+            <p className="text-2xl font-semibold text-slate-900">4. Responsible Disposal</p>
+            <p className="mt-2">
               Driver routes are tracked to confirm arrival at approved landfill or recycling
               facilities. Photos are taken at Quote, Arrival, and Completion.
             </p>
@@ -172,18 +185,20 @@ export default function UsersPage() {
         </ol>
       </section>
 
-      {/* WHAT WE TAKE (UNCHANGED) */}
-      <section className="px-6">
-        <h2 className="text-3xl font-bold text-slate-900 text-center">What We Take</h2>
+      {/* ---------------------------------------------------------------------- */}
+      {/* WHAT WE TAKE — Premium Layout                                         */}
+      {/* ---------------------------------------------------------------------- */}
+      <section className="mx-auto max-w-7xl px-6">
+        <h2 className="text-5xl font-bold text-slate-900 text-center">What We Take</h2>
 
-        <p className="mt-3 text-center text-slate-600 max-w-2xl mx-auto">
+        <p className="mt-6 text-center text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
           Waste Driver supports a wide range of residential waste categories.
         </p>
 
         {/* FREE ITEMS */}
-        <div className="mt-12">
-          <h3 className="text-2xl font-semibold text-slate-900">Free Items</h3>
-          <ul className="mt-4 grid gap-3 text-slate-700 md:grid-cols-2">
+        <div className="mt-16">
+          <h3 className="text-3xl font-semibold text-slate-900">Free Items</h3>
+          <ul className="mt-6 grid gap-4 text-slate-700 md:grid-cols-2 text-lg">
             <li>Passenger vehicle tires</li>
             <li>Household hazardous waste (paint, chemicals, batteries, vapes, etc.)</li>
             <li>Electronics (must have plug or battery)</li>
@@ -199,9 +214,9 @@ export default function UsersPage() {
         </div>
 
         {/* CHARGE ITEMS */}
-        <div className="mt-12">
-          <h3 className="text-2xl font-semibold text-slate-900">Charge Items</h3>
-          <ul className="mt-4 grid gap-3 text-slate-700 md:grid-cols-2">
+        <div className="mt-16">
+          <h3 className="text-3xl font-semibold text-slate-900">Charge Items</h3>
+          <ul className="mt-6 grid gap-4 text-slate-700 md:grid-cols-2 text-lg">
             <li>Furniture</li>
             <li>Small gas‑powered engines (fuel removed)</li>
             <li>Yard waste (no sod)</li>
@@ -217,9 +232,9 @@ export default function UsersPage() {
         </div>
 
         {/* NOT ACCEPTED */}
-        <div className="mt-12">
-          <h3 className="text-2xl font-semibold text-slate-900">Not Accepted</h3>
-          <ul className="mt-4 grid gap-3 text-slate-700 md:grid-cols-2">
+        <div className="mt-16">
+          <h3 className="text-3xl font-semibold text-slate-900">Not Accepted</h3>
+          <ul className="mt-6 grid gap-4 text-slate-700 md:grid-cols-2 text-lg">
             <li>Industrial & commercial waste</li>
             <li>Radioactive waste</li>
             <li>Asbestos waste</li>
@@ -234,35 +249,39 @@ export default function UsersPage() {
         </div>
       </section>
 
-      {/* MARKETPLACE ADVANTAGE */}
-      <section className="px-6">
-        <h2 className="text-3xl font-bold text-slate-900 text-center">
+      {/* ---------------------------------------------------------------------- */}
+      {/* MARKETPLACE ADVANTAGE — Premium Section                                */}
+      {/* ---------------------------------------------------------------------- */}
+      <section className="mx-auto max-w-5xl px-6">
+        <h2 className="text-5xl font-bold text-slate-900 text-center">
           Marketplace Advantage
         </h2>
 
-        <p className="mt-6 max-w-3xl mx-auto text-center text-slate-700">
+        <p className="mt-10 max-w-3xl mx-auto text-center text-xl text-slate-700 leading-relaxed">
           Waste Driver’s independent‑partner and AI‑enhanced routing model lowers User costs by
           30–40% while keeping Driver revenue intact. It’s easier and more trustworthy than
           classifieds or random trucks — and positions Waste Driver as the marketplace alternative
           to expensive branded junk haulers.
         </p>
 
-        <p className="mt-4 max-w-3xl mx-auto text-center text-slate-700">
+        <p className="mt-6 max-w-3xl mx-auto text-center text-xl text-slate-700 leading-relaxed">
           Waste Driver connects verified Independent Drivers with Users through an AI‑enhanced
           data platform — ensuring safety, transparency, and responsible disposal.
         </p>
       </section>
 
-      {/* CTA SECTION */}
-      <section className="rounded-3xl bg-emerald-600 px-10 py-16 text-center text-white shadow-lg mx-6">
-        <h2 className="text-3xl font-bold">Ready to Book Your Pickup?</h2>
-        <p className="mt-3 text-lg text-emerald-100">
+      {/* ---------------------------------------------------------------------- */}
+      {/* CTA SECTION — Premium Tech Marketplace                                 */}
+      {/* ---------------------------------------------------------------------- */}
+      <section className="rounded-3xl bg-emerald-600 px-10 py-20 text-center text-white shadow-xl mx-6">
+        <h2 className="text-4xl font-bold">Ready to Book Your Pickup?</h2>
+        <p className="mt-4 text-xl text-emerald-100">
           Fast, affordable, environmentally responsible junk removal.
         </p>
 
         <a
           href="/download"
-          className="mt-8 inline-block rounded-xl bg-white px-8 py-3 text-emerald-700 font-semibold shadow hover:bg-slate-100 transition"
+          className="mt-10 inline-block rounded-xl bg-white px-8 py-4 text-emerald-700 text-lg font-semibold shadow hover:bg-slate-100 transition"
         >
           Download the App
         </a>

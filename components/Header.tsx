@@ -54,7 +54,11 @@ export default function Header() {
             Download App
           </a>
 
-          <a href="/login" className="hover:text-emerald-600 transition-colors">
+          {/* NEW PREMIUM LOGIN BUTTON */}
+          <a
+            href="/login"
+            className="rounded-lg border border-slate-300 px-5 py-2 text-slate-700 font-semibold hover:border-slate-400 hover:bg-slate-100 transition"
+          >
             Login
           </a>
 
@@ -113,7 +117,11 @@ export default function Header() {
             Download App
           </a>
 
-          <a href="/login" className="block hover:text-emerald-600 transition-colors">
+          {/* NEW PREMIUM LOGIN BUTTON (MOBILE) */}
+          <a
+            href="/login"
+            className="block rounded-lg border border-slate-300 px-4 py-2 text-slate-700 font-semibold hover:bg-slate-100 transition"
+          >
             Login
           </a>
 
@@ -128,3 +136,4 @@ export default function Header() {
     </header>
   );
 }
+

@@ -17,7 +17,7 @@ export default function HomePage() {
 
             {/* LEFT TEXT */}
             <div>
-              <h1 className="text-6xl font-bold tracking-tight text-slate-900 leading-tight md:text-7xl">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-slate-900 leading-tight">
                 AI‑Powered Junk & Waste Transportation
               </h1>
 
@@ -223,4 +223,3 @@ export default function HomePage() {
     </div>
   );
 }
-
