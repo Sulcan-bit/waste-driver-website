@@ -38,6 +38,16 @@ export default function DriversPage() {
             </a>
           </div>
 
+          {/* SMS COMPLIANCE BUTTON — moved near top */}
+          <div className="mt-6">
+            <a
+              href="/sms-compliance"
+              className="inline-block rounded-xl border border-slate-300 px-6 py-3 text-slate-700 text-sm font-semibold hover:bg-slate-100 transition"
+            >
+              Driver SMS Messaging Policy
+            </a>
+          </div>
+
           {/* DRIVER PHILOSOPHY */}
           <div className="mt-14 space-y-4 max-w-3xl mx-auto text-lg text-slate-700 leading-relaxed">
             <p>Your truck + our platform = a more efficient, more profitable workday.</p>
@@ -188,17 +198,6 @@ export default function DriversPage() {
         </a>
       </section>
 
-      {/* ---------------------------------------------------------------------- */}
-      {/* SMS COMPLIANCE LINK — Correct for Drivers                              */}
-      {/* ---------------------------------------------------------------------- */}
-      <p className="text-center text-sm text-slate-500">
-        <a href="/sms-compliance" className="text-emerald-700 hover:underline">
-  Driver SMS Messaging Policy
-</a>
-
-      </p>
-
     </div>
   );
 }
-

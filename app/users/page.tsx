@@ -40,6 +40,16 @@ export default function UsersPage() {
               Create Profile
             </a>
           </div>
+
+          {/* SMS COMPLIANCE BUTTON — moved near top */}
+          <div className="mt-6">
+            <a
+              href="/sms-compliance"
+              className="inline-block rounded-xl border border-slate-300 px-6 py-3 text-slate-700 text-sm font-semibold hover:bg-slate-100 transition"
+            >
+              User SMS Messaging Policy
+            </a>
+          </div>
         </div>
       </section>
 
@@ -287,14 +297,7 @@ export default function UsersPage() {
         </a>
       </section>
 
-      {/* SMS COMPLIANCE LINK */}
-      <p className="text-center text-sm text-slate-500">
-        <a href="/sms-compliance" className="text-emerald-700 hover:underline">
-  User SMS Messaging Policy
-</a>
-
-      </p>
-
     </div>
   );
 }
+
