@@ -1,3 +1,4 @@
+// components/Header.tsx
 "use client";
 
 import { useState } from "react";
@@ -10,9 +11,11 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b bg-white/80 backdrop-blur-xl shadow-sm">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
 
-        {/* LOGO */}
-        <a href="/" className="flex items-center">
-          <Logo size={42} />
+        {/* LOGO — Larger + Spin on Hover */}
+        <a href="/" className="flex items-center group">
+          <div className="transition-transform duration-700 group-hover:rotate-[360deg]">
+            <Logo size={54} />
+          </div>
         </a>
 
         {/* DESKTOP NAV */}
@@ -38,7 +41,6 @@ export default function Header() {
             Contact
           </a>
 
-          {/* NEW REQUIRED LINKS */}
           <a href="/privacy-policy" className="hover:text-emerald-600 transition-colors">
             Privacy Policy
           </a>
@@ -55,32 +57,39 @@ export default function Header() {
             1‑833‑99‑WASTE
           </a>
 
-          {/* CTA BUTTONS — UNIFIED SIZING */}
-          <a
-            href="/download"
-            className="rounded-lg px-5 py-2.5 text-[15px] font-semibold shadow-sm 
-                       bg-emerald-600 text-white hover:bg-emerald-700 transition"
-          >
-            Download App
-          </a>
+          {/* CTA BUTTON GROUP — Perfectly Unified */}
+          <div className="flex items-center gap-3">
 
-          <a
-            href="/login"
-            className="rounded-lg px-5 py-2.5 text-[15px] font-semibold 
-                       border border-slate-300 text-slate-700 
-                       hover:bg-slate-100 hover:border-slate-400 transition"
-          >
-            Login
-          </a>
+            {/* PRIMARY CTA */}
+            <a
+              href="/download"
+              className="min-w-[150px] text-center rounded-lg px-5 py-2.5 text-[15px] font-semibold 
+                         bg-emerald-600 text-white shadow-sm hover:bg-emerald-700 transition"
+            >
+              Download App
+            </a>
 
-          <a
-            href="/signup"
-            className="rounded-lg px-5 py-2.5 text-[15px] font-semibold 
-                       border border-emerald-600 text-emerald-700 
-                       hover:bg-emerald-50 transition"
-          >
-            Create Profile
-          </a>
+            {/* SECONDARY CTA */}
+            <a
+              href="/login"
+              className="min-w-[150px] text-center rounded-lg px-5 py-2.5 text-[15px] font-semibold 
+                         border border-slate-300 text-slate-700 
+                         hover:bg-slate-100 hover:border-slate-400 transition"
+            >
+              Login
+            </a>
+
+            {/* TERTIARY CTA */}
+            <a
+              href="/signup"
+              className="min-w-[150px] text-center rounded-lg px-5 py-2.5 text-[15px] font-semibold 
+                         border border-emerald-600 text-emerald-700 
+                         hover:bg-emerald-50 transition"
+            >
+              Create Profile
+            </a>
+
+          </div>
         </nav>
 
         {/* MOBILE MENU BUTTON */}
@@ -116,7 +125,6 @@ export default function Header() {
             Contact
           </a>
 
-          {/* NEW REQUIRED LINKS */}
           <a href="/privacy-policy" className="block hover:text-emerald-600 transition-colors">
             Privacy Policy
           </a>
@@ -132,7 +140,7 @@ export default function Header() {
             1‑833‑99‑WASTE
           </a>
 
-          {/* CTA BUTTONS — UNIFIED SIZING */}
+          {/* CTA BUTTONS — Mobile */}
           <a
             href="/download"
             className="block rounded-lg px-4 py-2.5 text-[15px] font-semibold 
