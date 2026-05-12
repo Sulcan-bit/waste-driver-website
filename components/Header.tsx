@@ -12,14 +12,12 @@ export default function Header() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
 
         {/* LOGO — Larger + Spin on Hover */}
-        <a href="/" className="flex items-center group">
-          <div className="transition-transform duration-700 group-hover:rotate-[360deg]">
-            <Logo size={54} />
-          </div>
+        <a href="/" className="flex items-center group pr-6">
+          <Logo size={54} spin />
         </a>
 
         {/* DESKTOP NAV */}
-        <nav className="hidden md:flex items-center gap-8 text-[15px] font-medium text-slate-700">
+        <nav className="hidden md:flex items-center gap-10 text-[15px] font-semibold text-slate-800">
 
           <a href="/services" className="hover:text-emerald-600 transition-colors">
             Services & Pricing
@@ -52,37 +50,34 @@ export default function Header() {
           {/* PHONE NUMBER */}
           <a
             href="tel:18339992783"
-            className="font-semibold text-slate-800 hover:text-emerald-600 transition-colors"
+            className="font-bold text-slate-900 hover:text-emerald-600 transition-colors"
           >
             1‑833‑99‑WASTE
           </a>
 
-          {/* CTA BUTTON GROUP — Perfectly Unified */}
+          {/* CTA BUTTONS — Reduced Padding */}
           <div className="flex items-center gap-3">
 
-            {/* PRIMARY CTA */}
             <a
               href="/download"
-              className="min-w-[150px] text-center rounded-lg px-5 py-2.5 text-[15px] font-semibold 
+              className="min-w-[130px] text-center rounded-lg px-4 py-2 text-[14px] font-semibold 
                          bg-emerald-600 text-white shadow-sm hover:bg-emerald-700 transition"
             >
               Download App
             </a>
 
-            {/* SECONDARY CTA */}
             <a
               href="/login"
-              className="min-w-[150px] text-center rounded-lg px-5 py-2.5 text-[15px] font-semibold 
+              className="min-w-[130px] text-center rounded-lg px-4 py-2 text-[14px] font-semibold 
                          border border-slate-300 text-slate-700 
                          hover:bg-slate-100 hover:border-slate-400 transition"
             >
               Login
             </a>
 
-            {/* TERTIARY CTA */}
             <a
               href="/signup"
-              className="min-w-[150px] text-center rounded-lg px-5 py-2.5 text-[15px] font-semibold 
+              className="min-w-[130px] text-center rounded-lg px-4 py-2 text-[14px] font-semibold 
                          border border-emerald-600 text-emerald-700 
                          hover:bg-emerald-50 transition"
             >
@@ -103,7 +98,7 @@ export default function Header() {
 
       {/* MOBILE MENU */}
       {open && (
-        <div className="md:hidden border-t bg-white px-6 py-6 space-y-5 text-[15px] font-medium text-slate-700 shadow-lg">
+        <div className="md:hidden border-t bg-white px-6 py-6 space-y-5 text-[15px] font-semibold text-slate-800 shadow-lg">
 
           <a href="/services" className="block hover:text-emerald-600 transition-colors">
             Services & Pricing
@@ -135,7 +130,7 @@ export default function Header() {
 
           <a
             href="tel:18339992783"
-            className="block font-semibold text-slate-800 hover:text-emerald-600 transition-colors"
+            className="block font-bold text-slate-900 hover:text-emerald-600 transition-colors"
           >
             1‑833‑99‑WASTE
           </a>
@@ -143,7 +138,7 @@ export default function Header() {
           {/* CTA BUTTONS — Mobile */}
           <a
             href="/download"
-            className="block rounded-lg px-4 py-2.5 text-[15px] font-semibold 
+            className="block rounded-lg px-4 py-2 text-[14px] font-semibold 
                        bg-emerald-600 text-white shadow hover:bg-emerald-700 transition"
           >
             Download App
@@ -151,7 +146,7 @@ export default function Header() {
 
           <a
             href="/login"
-            className="block rounded-lg px-4 py-2.5 text-[15px] font-semibold 
+            className="block rounded-lg px-4 py-2 text-[14px] font-semibold 
                        border border-slate-300 text-slate-700 
                        hover:bg-slate-100 transition"
           >
@@ -160,7 +155,7 @@ export default function Header() {
 
           <a
             href="/signup"
-            className="block rounded-lg px-4 py-2.5 text-[15px] font-semibold 
+            className="block rounded-lg px-4 py-2 text-[14px] font-semibold 
                        border border-emerald-600 text-emerald-700 
                        hover:bg-emerald-50 transition"
           >
