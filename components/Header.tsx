@@ -11,15 +11,16 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b bg-white/80 backdrop-blur-xl shadow-sm">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
 
-        {/* LOGO — Larger + Spin on Hover */}
-        <a href="/" className="flex items-center group pr-6">
-          <Logo size={54} spin />
+        {/* LOGO — spinning tire restored */}
+        <a href="/" className="flex items-center pr-8">
+          <Logo size={54} />
         </a>
 
         {/* DESKTOP NAV */}
         <nav className="hidden md:flex items-center gap-10 text-[15px] font-semibold text-slate-800">
 
-          <a href="/services" className="hover:text-emerald-600 transition-colors">
+          {/* Center-justified primary link */}
+          <a href="/services" className="hover:text-emerald-600 transition-colors text-center">
             Services & Pricing
           </a>
 
@@ -47,20 +48,20 @@ export default function Header() {
             Terms
           </a>
 
-          {/* PHONE NUMBER */}
+          {/* PHONE NUMBER — spacing tightened */}
           <a
             href="tel:18339992783"
-            className="font-bold text-slate-900 hover:text-emerald-600 transition-colors"
+            className="font-bold text-slate-900 hover:text-emerald-600 transition-colors pr-2"
           >
             1‑833‑99‑WASTE
           </a>
 
-          {/* CTA BUTTONS — Reduced Padding */}
-          <div className="flex items-center gap-3">
+          {/* CTA BUTTONS — reduced padding */}
+          <div className="flex items-center gap-2">
 
             <a
               href="/download"
-              className="min-w-[130px] text-center rounded-lg px-4 py-2 text-[14px] font-semibold 
+              className="min-w-[120px] text-center rounded-lg px-3 py-2 text-[14px] font-semibold 
                          bg-emerald-600 text-white shadow-sm hover:bg-emerald-700 transition"
             >
               Download App
@@ -68,7 +69,7 @@ export default function Header() {
 
             <a
               href="/login"
-              className="min-w-[130px] text-center rounded-lg px-4 py-2 text-[14px] font-semibold 
+              className="min-w-[120px] text-center rounded-lg px-3 py-2 text-[14px] font-semibold 
                          border border-slate-300 text-slate-700 
                          hover:bg-slate-100 hover:border-slate-400 transition"
             >
@@ -77,7 +78,7 @@ export default function Header() {
 
             <a
               href="/signup"
-              className="min-w-[130px] text-center rounded-lg px-4 py-2 text-[14px] font-semibold 
+              className="min-w-[120px] text-center rounded-lg px-3 py-2 text-[14px] font-semibold 
                          border border-emerald-600 text-emerald-700 
                          hover:bg-emerald-50 transition"
             >
@@ -166,3 +167,4 @@ export default function Header() {
     </header>
   );
 }
+
