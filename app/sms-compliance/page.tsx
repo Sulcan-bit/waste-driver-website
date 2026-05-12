@@ -4,7 +4,7 @@ export default function SMSCompliancePage() {
     <div className="space-y-32">
 
       {/* ---------------------------------------------------------------------- */}
-      {/* HERO SECTION — Premium Tech Marketplace                                */}
+      {/* HERO SECTION                                                           */}
       {/* ---------------------------------------------------------------------- */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-emerald-100 via-white to-slate-100 opacity-90" />
@@ -43,7 +43,7 @@ export default function SMSCompliancePage() {
       </section>
 
       {/* ---------------------------------------------------------------------- */}
-      {/* MAIN CONTENT — Premium Layout                                          */}
+      {/* MAIN CONTENT                                                           */}
       {/* ---------------------------------------------------------------------- */}
       <section className="mx-auto max-w-4xl px-6 space-y-20 text-slate-800">
 
@@ -89,6 +89,26 @@ export default function SMSCompliancePage() {
             <li>Agreeing to receive job alerts, quote requests, and operational messages.</li>
           </ul>
 
+          {/* ⭐ REQUIRED BY TELNYX — DIGITAL OPT-IN WORKFLOW */}
+          <div className="mt-10 p-6 bg-emerald-50 rounded-2xl border border-emerald-200">
+            <h3 className="text-2xl font-semibold text-slate-900">Digital Opt‑In Workflow</h3>
+            <p className="mt-4 text-lg text-slate-700 leading-relaxed">
+              During account creation in the WasteDriver app, the User or Driver enters their mobile
+              number and taps a checkbox labeled <strong>“Send me SMS updates from WasteDriver”</strong>
+              (unchecked by default and separate from email opt‑in and Terms acceptance). After
+              submitting the form, our system sends a confirmation SMS:
+            </p>
+
+            <p className="mt-6 text-lg font-medium text-slate-900 italic">
+              “WasteDriver: Reply YES to confirm SMS updates.”
+            </p>
+
+            <p className="mt-6 text-lg text-slate-700 leading-relaxed">
+              The User or Driver must reply YES before any further messages are sent. This satisfies
+              Canadian toll‑free double opt‑in requirements.
+            </p>
+          </div>
+
           <p className="mt-6 text-lg text-slate-700 leading-relaxed">
             Waste Driver does not send SMS messages to any User or Driver who has not provided
             explicit consent and completed phone verification.
@@ -106,17 +126,26 @@ export default function SMSCompliancePage() {
           <p className="mt-4 text-2xl font-semibold text-slate-900">STOP</p>
 
           <p className="mt-4 text-lg text-slate-700 leading-relaxed">
-            Once STOP is received, Waste Driver immediately stops sending SMS messages to that
-            number unless the User or Driver opts back in by replying:
+            To resume messages, reply:
           </p>
 
+          {/* ⭐ REQUIRED BY TELNYX — OPT-IN KEYWORD */}
           <p className="mt-4 text-2xl font-semibold text-slate-900">START</p>
 
           <p className="mt-4 text-lg text-slate-700 leading-relaxed">
-            For help or support, Users and Drivers may reply:
+            For help or support, reply:
           </p>
 
           <p className="mt-4 text-2xl font-semibold text-slate-900">HELP</p>
+
+          {/* ⭐ REQUIRED BY TELNYX — HELP AUTO-REPLY */}
+          <div className="mt-6 p-6 bg-slate-100 rounded-2xl border border-slate-300">
+            <p className="text-lg text-slate-700 leading-relaxed">
+              <strong>HELP Auto‑Reply:</strong><br />
+              “WasteDriver Support: For help, email info@wastedriver.com or call 1‑833‑99‑WASTE.
+              Reply STOP to opt out.”
+            </p>
+          </div>
         </div>
 
         {/* TYPES OF MESSAGES */}
@@ -125,8 +154,26 @@ export default function SMSCompliancePage() {
 
           <p className="mt-4 text-lg text-slate-700 leading-relaxed">
             Waste Driver sends only operational, transactional, and account‑related messages.
-            Below are examples of real messages sent to Users and Drivers.
           </p>
+
+          {/* ⭐ REQUIRED BY TELNYX — BRANDED SAMPLE MESSAGE */}
+          <div className="mt-10 p-6 bg-emerald-50 rounded-2xl border border-emerald-200">
+            <h3 className="text-2xl font-semibold text-slate-900">Sample Verification Message</h3>
+            <p className="mt-4 text-lg text-slate-700 leading-relaxed">
+              “WasteDriver: Your verification code is 123456. Do not share. Reply STOP to opt out,
+              HELP for help. Msg & data rates may apply.”
+            </p>
+          </div>
+
+          {/* ⭐ REQUIRED BY TELNYX — OPT-IN CONFIRMATION */}
+          <div className="mt-10 p-6 bg-emerald-50 rounded-2xl border border-emerald-200">
+            <h3 className="text-2xl font-semibold text-slate-900">Opt‑In Confirmation Message</h3>
+            <p className="mt-4 text-lg text-slate-700 leading-relaxed">
+              “WasteDriver: You're subscribed. Reply STOP to opt out, HELP for help. Msg & data
+              rates may apply. Msg frequency varies. Terms: https://wastedriver.com/terms
+              Privacy: https://wastedriver.com/privacy-policy”
+            </p>
+          </div>
 
           {/* USER MESSAGES */}
           <h3 className="mt-10 text-2xl font-semibold text-slate-900">User Messages</h3>

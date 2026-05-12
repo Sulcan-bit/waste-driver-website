@@ -38,6 +38,15 @@ export default function Header() {
             Contact
           </a>
 
+          {/* NEW REQUIRED LINKS */}
+          <a href="/privacy-policy" className="hover:text-emerald-600 transition-colors">
+            Privacy Policy
+          </a>
+
+          <a href="/terms" className="hover:text-emerald-600 transition-colors">
+            Terms
+          </a>
+
           {/* PHONE NUMBER */}
           <a
             href="tel:18339992783"
@@ -46,25 +55,29 @@ export default function Header() {
             1‑833‑99‑WASTE
           </a>
 
-          {/* CTA BUTTONS */}
+          {/* CTA BUTTONS — UNIFIED SIZING */}
           <a
             href="/download"
-            className="rounded-lg bg-emerald-600 px-5 py-2 text-white font-semibold shadow-sm hover:bg-emerald-700 transition"
+            className="rounded-lg px-5 py-2.5 text-[15px] font-semibold shadow-sm 
+                       bg-emerald-600 text-white hover:bg-emerald-700 transition"
           >
             Download App
           </a>
 
-          {/* NEW PREMIUM LOGIN BUTTON */}
           <a
             href="/login"
-            className="rounded-lg border border-slate-300 px-5 py-2 text-slate-700 font-semibold hover:border-slate-400 hover:bg-slate-100 transition"
+            className="rounded-lg px-5 py-2.5 text-[15px] font-semibold 
+                       border border-slate-300 text-slate-700 
+                       hover:bg-slate-100 hover:border-slate-400 transition"
           >
             Login
           </a>
 
           <a
             href="/signup"
-            className="rounded-lg border border-emerald-600 px-5 py-2 text-emerald-700 font-semibold hover:bg-emerald-50 transition"
+            className="rounded-lg px-5 py-2.5 text-[15px] font-semibold 
+                       border border-emerald-600 text-emerald-700 
+                       hover:bg-emerald-50 transition"
           >
             Create Profile
           </a>
@@ -103,6 +116,15 @@ export default function Header() {
             Contact
           </a>
 
+          {/* NEW REQUIRED LINKS */}
+          <a href="/privacy-policy" className="block hover:text-emerald-600 transition-colors">
+            Privacy Policy
+          </a>
+
+          <a href="/terms" className="block hover:text-emerald-600 transition-colors">
+            Terms
+          </a>
+
           <a
             href="tel:18339992783"
             className="block font-semibold text-slate-800 hover:text-emerald-600 transition-colors"
@@ -110,24 +132,29 @@ export default function Header() {
             1‑833‑99‑WASTE
           </a>
 
+          {/* CTA BUTTONS — UNIFIED SIZING */}
           <a
             href="/download"
-            className="block rounded-lg bg-emerald-600 px-4 py-2 text-white font-semibold shadow hover:bg-emerald-700 transition"
+            className="block rounded-lg px-4 py-2.5 text-[15px] font-semibold 
+                       bg-emerald-600 text-white shadow hover:bg-emerald-700 transition"
           >
             Download App
           </a>
 
-          {/* NEW PREMIUM LOGIN BUTTON (MOBILE) */}
           <a
             href="/login"
-            className="block rounded-lg border border-slate-300 px-4 py-2 text-slate-700 font-semibold hover:bg-slate-100 transition"
+            className="block rounded-lg px-4 py-2.5 text-[15px] font-semibold 
+                       border border-slate-300 text-slate-700 
+                       hover:bg-slate-100 transition"
           >
             Login
           </a>
 
           <a
             href="/signup"
-            className="block rounded-lg border border-emerald-600 px-4 py-2 text-emerald-700 font-semibold hover:bg-emerald-50 transition"
+            className="block rounded-lg px-4 py-2.5 text-[15px] font-semibold 
+                       border border-emerald-600 text-emerald-700 
+                       hover:bg-emerald-50 transition"
           >
             Create Profile
           </a>
@@ -136,4 +163,3 @@ export default function Header() {
     </header>
   );
 }
-
