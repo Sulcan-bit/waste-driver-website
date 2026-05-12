@@ -12,12 +12,12 @@ export default function Header() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
 
         {/* LOGO — spinning tire */}
-        <a href="/" className="flex items-center pr-14">
+        <a href="/" className="flex items-center pr-20">
           <Logo size={54} />
         </a>
 
         {/* DESKTOP NAV */}
-        <nav className="hidden md:flex items-center gap-10 text-[15px] font-semibold text-slate-800">
+        <nav className="hidden md:flex items-center gap-8 text-[15px] font-semibold text-slate-800">
 
           {/* Center-justified */}
           <a href="/services" className="hover:text-emerald-600 transition-colors text-center">
@@ -62,7 +62,7 @@ export default function Header() {
 
             <a
               href="/download"
-              className="min-w-[120px] text-center rounded-lg px-3 py-2 text-[14px] font-semibold 
+              className="min-w-[120px] text-center rounded-lg px-3 py-2 text-[13px] font-semibold 
                          bg-emerald-600 text-white shadow-sm hover:bg-emerald-700 transition"
             >
               Download App
@@ -70,7 +70,7 @@ export default function Header() {
 
             <a
               href="/login"
-              className="min-w-[120px] text-center rounded-lg px-3 py-2 text-[14px] font-semibold 
+              className="min-w-[120px] text-center rounded-lg px-3 py-2 text-[13px] font-semibold 
                          border border-slate-300 text-slate-700 
                          hover:bg-slate-100 hover:border-slate-400 transition"
             >
@@ -79,7 +79,7 @@ export default function Header() {
 
             <a
               href="/signup"
-              className="min-w-[120px] text-center rounded-lg px-3 py-2 text-[14px] font-semibold 
+              className="min-w-[120px] text-center rounded-lg px-3 py-2 text-[13px] font-semibold 
                          border border-emerald-600 text-emerald-700 
                          hover:bg-emerald-50 transition"
             >
@@ -168,5 +168,6 @@ export default function Header() {
     </header>
   );
 }
+
 
 
