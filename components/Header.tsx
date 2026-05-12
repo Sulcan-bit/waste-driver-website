@@ -11,15 +11,15 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b bg-white/80 backdrop-blur-xl shadow-sm">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
 
-        {/* LOGO — spinning tire restored */}
-        <a href="/" className="flex items-center pr-8">
+        {/* LOGO — spinning tire */}
+        <a href="/" className="flex items-center pr-14">
           <Logo size={54} />
         </a>
 
         {/* DESKTOP NAV */}
         <nav className="hidden md:flex items-center gap-10 text-[15px] font-semibold text-slate-800">
 
-          {/* Center-justified primary link */}
+          {/* Center-justified */}
           <a href="/services" className="hover:text-emerald-600 transition-colors text-center">
             Services & Pricing
           </a>
@@ -40,7 +40,8 @@ export default function Header() {
             Contact
           </a>
 
-          <a href="/privacy-policy" className="hover:text-emerald-600 transition-colors">
+          {/* Center-justified */}
+          <a href="/privacy-policy" className="hover:text-emerald-600 transition-colors text-center">
             Privacy Policy
           </a>
 
@@ -51,12 +52,12 @@ export default function Header() {
           {/* PHONE NUMBER — spacing tightened */}
           <a
             href="tel:18339992783"
-            className="font-bold text-slate-900 hover:text-emerald-600 transition-colors pr-2"
+            className="font-bold text-slate-900 hover:text-emerald-600 transition-colors pr-1"
           >
             1‑833‑99‑WASTE
           </a>
 
-          {/* CTA BUTTONS — reduced padding */}
+          {/* CTA BUTTONS — unified sizing */}
           <div className="flex items-center gap-2">
 
             <a
@@ -101,7 +102,7 @@ export default function Header() {
       {open && (
         <div className="md:hidden border-t bg-white px-6 py-6 space-y-5 text-[15px] font-semibold text-slate-800 shadow-lg">
 
-          <a href="/services" className="block hover:text-emerald-600 transition-colors">
+          <a href="/services" className="block hover:text-emerald-600 transition-colors text-center">
             Services & Pricing
           </a>
 
@@ -121,7 +122,7 @@ export default function Header() {
             Contact
           </a>
 
-          <a href="/privacy-policy" className="block hover:text-emerald-600 transition-colors">
+          <a href="/privacy-policy" className="block hover:text-emerald-600 transition-colors text-center">
             Privacy Policy
           </a>
 
@@ -167,4 +168,5 @@ export default function Header() {
     </header>
   );
 }
+
 
