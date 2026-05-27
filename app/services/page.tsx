@@ -1,4 +1,5 @@
 // app/services/page.tsx
+import Image from "next/image";
 import { CanadaMap } from "@/components/CanadaMap";
 
 export default function ServicesPage() {
@@ -12,32 +13,48 @@ export default function ServicesPage() {
         {/* Atmospheric Gradient Background */}
         <div className="absolute inset-0 bg-gradient-to-br from-emerald-100 via-white to-slate-100 opacity-90" />
 
-        <div className="relative text-center mx-auto max-w-4xl px-6 pt-32 pb-32">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-slate-900 leading-tight">
-            Services & Pricing
-          </h1>
+        <div className="relative mx-auto max-w-6xl px-6 pt-32 pb-32 grid grid-cols-1 md:grid-cols-2 gap-16 md:items-center">
 
-          <p className="mt-8 text-xl text-slate-600 leading-relaxed max-w-3xl mx-auto">
-            Waste Driver uses an AI‑enhanced marketplace model that lowers User costs by 30–40%
-            while protecting Driver revenue. Users receive quotes before accepting jobs, and
-            Drivers benefit from efficient routing and increased job density.
-          </p>
+          {/* LEFT TEXT */}
+          <div className="text-center md:text-left">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-slate-900 leading-tight">
+              Services & Pricing
+            </h1>
 
-          <div className="mt-12 flex flex-wrap justify-center gap-4">
-            <a
-              href="/download"
-              className="rounded-xl bg-emerald-600 px-8 py-4 text-white text-lg font-semibold shadow-lg hover:bg-emerald-700 transition"
-            >
-              Download the App
-            </a>
+            <p className="mt-8 text-xl text-slate-600 leading-relaxed max-w-3xl">
+              Waste Driver uses an AI‑enhanced marketplace model that lowers User costs by 30–40%
+              while protecting Driver revenue. Users receive quotes before accepting jobs, and
+              Drivers benefit from efficient routing and increased job density.
+            </p>
 
-            <a
-              href="/signup"
-              className="rounded-xl border border-emerald-600 px-8 py-4 text-emerald-700 text-lg font-semibold hover:bg-emerald-50 transition"
-            >
-              Create Profile
-            </a>
+            <div className="mt-12 flex flex-wrap justify-center md:justify-start gap-4">
+              <a
+                href="/download"
+                className="rounded-xl bg-emerald-600 px-8 py-4 text-white text-lg font-semibold shadow-lg hover:bg-emerald-700 transition"
+              >
+                Download the App
+              </a>
+
+              <a
+                href="/signup"
+                className="rounded-xl border border-emerald-600 px-8 py-4 text-emerald-700 text-lg font-semibold hover:bg-emerald-50 transition"
+              >
+                Create Profile
+              </a>
+            </div>
           </div>
+
+          {/* RIGHT IMAGE — New Waste Driver truck */}
+          <div className="relative h-80 w-full md:h-[480px]">
+            <Image
+              src="/images/WasteDriver_EndDumpTrailer4.jfif"
+              alt="Waste Driver truck with end dump trailer"
+              fill
+              className="rounded-3xl object-cover shadow-2xl ring-1 ring-black/5"
+              priority
+            />
+          </div>
+
         </div>
       </section>
 
@@ -212,6 +229,17 @@ export default function ServicesPage() {
         >
           Download the App
         </a>
+
+        {/* Footer Logo — New */}
+        <div className="mt-20 flex justify-center">
+          <Image
+            src="/images/WasteDriver_TruckandTextLogo.jfif"
+            alt="Waste Driver truck and text logo"
+            width={260}
+            height={120}
+            className="opacity-90"
+          />
+        </div>
       </section>
 
     </div>

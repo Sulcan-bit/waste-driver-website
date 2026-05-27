@@ -1,3 +1,6 @@
+// app/users/page.tsx
+import Image from "next/image";
+
 export default function UsersPage() {
   return (
     <div className="space-y-48">
@@ -9,47 +12,63 @@ export default function UsersPage() {
         {/* Atmospheric Gradient Background */}
         <div className="absolute inset-0 bg-gradient-to-br from-emerald-100 via-white to-slate-100 opacity-90" />
 
-        <div className="relative mx-auto max-w-5xl px-6 pt-32 pb-32 text-center">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-slate-900 leading-tight">
-            Fast, Affordable Junk Removal — Powered by AI
-          </h1>
+        <div className="relative mx-auto max-w-6xl px-6 pt-32 pb-32 grid grid-cols-1 md:grid-cols-2 gap-16 md:items-center">
 
-          <p className="mt-8 text-xl text-slate-600 leading-relaxed max-w-3xl mx-auto">
-            Waste Driver connects Users with verified Independent Drivers for the lowest cost,
-            fast, safe, reliable, and accountable curbside or alley pickup service.
-          </p>
+          {/* LEFT TEXT */}
+          <div className="text-center md:text-left">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-slate-900 leading-tight">
+              Fast, Affordable Junk Removal — Powered by AI
+            </h1>
 
-          <p className="mt-6 text-lg text-slate-700 leading-relaxed max-w-3xl mx-auto">
-            Our marketplace ensures proper disposal, transparent pricing, and a trusted experience
-            backed by photos and route verification.
-          </p>
+            <p className="mt-8 text-xl text-slate-600 leading-relaxed max-w-3xl">
+              Waste Driver connects Users with verified Independent Drivers for the lowest cost,
+              fast, safe, reliable, and accountable curbside or alley pickup service.
+            </p>
 
-          {/* CTA BUTTONS */}
-          <div className="mt-12 flex flex-wrap justify-center gap-4">
-            <a
-              href="/download"
-              className="rounded-xl bg-emerald-600 px-8 py-4 text-white text-lg font-semibold shadow-lg hover:bg-emerald-700 transition"
-            >
-              Download the App
-            </a>
+            <p className="mt-6 text-lg text-slate-700 leading-relaxed max-w-3xl">
+              Our marketplace ensures proper disposal, transparent pricing, and a trusted experience
+              backed by photos and route verification.
+            </p>
 
-            <a
-              href="/signup"
-              className="rounded-xl border border-emerald-600 px-8 py-4 text-emerald-700 text-lg font-semibold hover:bg-emerald-50 transition"
-            >
-              Create Profile
-            </a>
+            {/* CTA BUTTONS */}
+            <div className="mt-12 flex flex-wrap justify-center md:justify-start gap-4">
+              <a
+                href="/download"
+                className="rounded-xl bg-emerald-600 px-8 py-4 text-white text-lg font-semibold shadow-lg hover:bg-emerald-700 transition"
+              >
+                Download the App
+              </a>
+
+              <a
+                href="/signup"
+                className="rounded-xl border border-emerald-600 px-8 py-4 text-emerald-700 text-lg font-semibold hover:bg-emerald-50 transition"
+              >
+                Create Profile
+              </a>
+            </div>
+
+            {/* SMS COMPLIANCE BUTTON */}
+            <div className="mt-6">
+              <a
+                href="/sms-compliance"
+                className="inline-block rounded-xl border border-slate-300 px-6 py-3 text-slate-700 text-sm font-semibold hover:bg-slate-100 transition"
+              >
+                User SMS Messaging Policy
+              </a>
+            </div>
           </div>
 
-          {/* SMS COMPLIANCE BUTTON — moved near top */}
-          <div className="mt-6">
-            <a
-              href="/sms-compliance"
-              className="inline-block rounded-xl border border-slate-300 px-6 py-3 text-slate-700 text-sm font-semibold hover:bg-slate-100 transition"
-            >
-              User SMS Messaging Policy
-            </a>
+          {/* RIGHT IMAGE — New Waste Driver truck */}
+          <div className="relative h-80 w-full md:h-[480px]">
+            <Image
+              src="/images/WasteDriver_EndDumpTrailer3.jfif"
+              alt="Waste Driver truck with end dump trailer"
+              fill
+              className="rounded-3xl object-cover shadow-2xl ring-1 ring-black/5"
+              priority
+            />
           </div>
+
         </div>
       </section>
 
@@ -295,9 +314,21 @@ export default function UsersPage() {
         >
           Download the App
         </a>
+
+        {/* Footer Logo — New */}
+        <div className="mt-20 flex justify-center">
+          <Image
+            src="/images/WasteDriver_TruckandTextLogo.jfif"
+            alt="Waste Driver truck and text logo"
+            width={260}
+            height={120}
+            className="opacity-90"
+          />
+        </div>
       </section>
 
     </div>
   );
 }
+
 

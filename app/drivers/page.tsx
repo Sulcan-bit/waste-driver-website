@@ -1,4 +1,6 @@
 // app/drivers/page.tsx
+import Image from "next/image";
+
 export default function DriversPage() {
   return (
     <div className="space-y-48">
@@ -10,52 +12,70 @@ export default function DriversPage() {
         {/* Atmospheric Gradient Background */}
         <div className="absolute inset-0 bg-gradient-to-br from-emerald-100 via-white to-slate-100 opacity-90" />
 
-        <div className="relative mx-auto max-w-5xl px-6 pt-32 pb-32 text-center">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-slate-900 leading-tight">
-            Earn More With AI‑Optimized Routes
-          </h1>
+        <div className="relative mx-auto max-w-6xl px-6 pt-32 pb-32">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:items-center">
 
-          <p className="mt-8 text-xl text-slate-600 leading-relaxed max-w-3xl mx-auto">
-            Waste Driver brings the marketplace directly to Independent Drivers. We handle the
-            advertising, branding, and User trust — you focus on the work. Our AI‑enhanced routing
-            reduces deadhead time, increases route density, and helps you complete more jobs per hour.
-          </p>
+            {/* LEFT TEXT */}
+            <div className="text-center md:text-left">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-slate-900 leading-tight">
+                Earn More With AI‑Optimized Routes
+              </h1>
 
-          {/* CTA BUTTONS */}
-          <div className="mt-12 flex flex-wrap justify-center gap-4">
-            <a
-              href="/signup"
-              className="rounded-xl bg-emerald-600 px-8 py-4 text-white text-lg font-semibold shadow-lg hover:bg-emerald-700 transition"
-            >
-              Become a Driver Partner
-            </a>
+              <p className="mt-8 text-xl text-slate-600 leading-relaxed max-w-3xl">
+                Waste Driver brings the marketplace directly to Independent Drivers. We handle the
+                advertising, branding, and User trust — you focus on the work. Our AI‑enhanced routing
+                reduces deadhead time, increases route density, and helps you complete more jobs per hour.
+              </p>
 
-            <a
-              href="/download"
-              className="rounded-xl border border-emerald-600 px-8 py-4 text-emerald-700 text-lg font-semibold hover:bg-emerald-50 transition"
-            >
-              Download the App
-            </a>
-          </div>
+              {/* CTA BUTTONS */}
+              <div className="mt-12 flex flex-wrap justify-center md:justify-start gap-4">
+                <a
+                  href="/signup"
+                  className="rounded-xl bg-emerald-600 px-8 py-4 text-white text-lg font-semibold shadow-lg hover:bg-emerald-700 transition"
+                >
+                  Become a Driver Partner
+                </a>
 
-          {/* SMS COMPLIANCE BUTTON — moved near top */}
-          <div className="mt-6">
-            <a
-              href="/sms-compliance"
-              className="inline-block rounded-xl border border-slate-300 px-6 py-3 text-slate-700 text-sm font-semibold hover:bg-slate-100 transition"
-            >
-              Driver SMS Messaging Policy
-            </a>
-          </div>
+                <a
+                  href="/download"
+                  className="rounded-xl border border-emerald-600 px-8 py-4 text-emerald-700 text-lg font-semibold hover:bg-emerald-50 transition"
+                >
+                  Download the App
+                </a>
+              </div>
 
-          {/* DRIVER PHILOSOPHY */}
-          <div className="mt-14 space-y-4 max-w-3xl mx-auto text-lg text-slate-700 leading-relaxed">
-            <p>Your truck + our platform = a more efficient, more profitable workday.</p>
-            <p>We help Independent Drivers compete with big junk haulers — without taking your revenue.</p>
-            <p>Users trust verified Drivers, which means more jobs and less downtime.</p>
-            <p className="font-semibold text-slate-800">
-              Waste Driver is built to help Independent Drivers win.
-            </p>
+              {/* SMS COMPLIANCE BUTTON */}
+              <div className="mt-6">
+                <a
+                  href="/sms-compliance"
+                  className="inline-block rounded-xl border border-slate-300 px-6 py-3 text-slate-700 text-sm font-semibold hover:bg-slate-100 transition"
+                >
+                  Driver SMS Messaging Policy
+                </a>
+              </div>
+
+              {/* DRIVER PHILOSOPHY */}
+              <div className="mt-14 space-y-4 text-lg text-slate-700 leading-relaxed max-w-3xl">
+                <p>Your truck + our platform = a more efficient, more profitable workday.</p>
+                <p>We help Independent Drivers compete with big junk haulers — without taking your revenue.</p>
+                <p>Users trust verified Drivers, which means more jobs and less downtime.</p>
+                <p className="font-semibold text-slate-800">
+                  Waste Driver is built to help Independent Drivers win.
+                </p>
+              </div>
+            </div>
+
+            {/* RIGHT IMAGE — Updated with new Waste Driver truck */}
+            <div className="relative h-80 w-full md:h-[480px]">
+              <Image
+                src="/images/WasteDriver_EndDumpTrailer4.jfif"
+                alt="Waste Driver truck with end dump trailer"
+                fill
+                className="rounded-3xl object-cover shadow-2xl ring-1 ring-black/5"
+                priority
+              />
+            </div>
+
           </div>
         </div>
       </section>
@@ -96,21 +116,21 @@ export default function DriversPage() {
             </p>
           </div>
 
-          <div className="rounded-3xl bg-white p-10 shadow-xl hover:shadow-2xl transition ring-1 ring-black/5">
+          <div className="rounded-3xl bg-white p-10 shadow-xl hover:shadow-2xl transition ring-1 ring-black/5 md:col-span-1">
             <h3 className="text-2xl font-semibold text-slate-900">No Haggling or Bidding Wars</h3>
             <p className="mt-4 text-slate-600 text-lg leading-relaxed">
               You send a quote. Users choose instantly. No endless messaging or price battles.
             </p>
           </div>
 
-          <div className="rounded-3xl bg-white p-10 shadow-xl hover:shadow-2xl transition ring-1 ring-black/5">
+          <div className="rounded-3xl bg-white p-10 shadow-xl hover:shadow-2xl transition ring-1 ring-black/5 md:col-span-1">
             <h3 className="text-2xl font-semibold text-slate-900">AI Reduces Deadhead Time</h3>
             <p className="mt-4 text-slate-600 text-lg leading-relaxed">
               Our routing system increases route density so you complete more jobs per hour.
             </p>
           </div>
 
-          <div className="rounded-3xl bg-white p-10 shadow-xl hover:shadow-2xl transition ring-1 ring-black/5">
+          <div className="rounded-3xl bg-white p-10 shadow-xl hover:shadow-2xl transition ring-1 ring-black/5 md:col-span-1">
             <h3 className="text-2xl font-semibold text-slate-900">You Keep Your Earnings</h3>
             <p className="mt-4 text-slate-600 text-lg leading-relaxed">
               Drivers set the profit they require — above their costs. Waste Driver never takes a cut.
@@ -196,8 +216,20 @@ export default function DriversPage() {
         >
           Become a Driver Partner
         </a>
+
+        {/* Footer Logo — New */}
+        <div className="mt-20 flex justify-center">
+          <Image
+            src="/images/WasteDriver_TruckandTextLogo.jfif"
+            alt="Waste Driver truck and text logo"
+            width={260}
+            height={120}
+            className="opacity-90"
+          />
+        </div>
       </section>
 
     </div>
   );
 }
+

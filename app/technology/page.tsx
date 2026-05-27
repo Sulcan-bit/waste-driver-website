@@ -1,23 +1,51 @@
+// app/technology/page.tsx
+
+import Image from "next/image";
 import { CanadaMap } from "@/components/CanadaMap";
 
 export default function TechnologyPage() {
   return (
     <div className="space-y-24">
 
-      {/* Hero Section */}
-      <section className="flex flex-col items-center text-center">
-        <h1 className="text-4xl font-bold text-slate-900 md:text-5xl">
-          AI‑Enhanced Routing & Marketplace Technology
-        </h1>
+      {/* ---------------------------------------------------------------------- */}
+      {/* HERO SECTION — Premium Tech Marketplace                                */}
+      {/* ---------------------------------------------------------------------- */}
+      <section className="relative overflow-hidden">
+        {/* Atmospheric Gradient Background */}
+        <div className="absolute inset-0 bg-gradient-to-br from-emerald-100 via-white to-slate-100 opacity-90" />
 
-        <p className="mt-4 max-w-2xl text-lg text-slate-600">
-          Waste Driver is an environmental and transportation technology platform company that uses AI 
-          to lower the cost of junk and waste transportation while maintaining or increasing profitability 
-          for Independent Drivers.
-        </p>
+        <div className="relative mx-auto max-w-6xl px-6 pt-32 pb-24 grid grid-cols-1 md:grid-cols-2 gap-16 md:items-center">
+
+          {/* LEFT TEXT */}
+          <div className="text-center md:text-left">
+            <h1 className="text-4xl font-bold text-slate-900 md:text-5xl leading-tight">
+              AI‑Enhanced Routing & Marketplace Technology
+            </h1>
+
+            <p className="mt-6 max-w-2xl text-lg text-slate-600 leading-relaxed">
+              Waste Driver is an environmental and transportation technology platform company that uses AI 
+              to lower the cost of junk and waste transportation while maintaining or increasing profitability 
+              for Independent Drivers.
+            </p>
+          </div>
+
+          {/* RIGHT IMAGE — New Waste Driver truck */}
+          <div className="relative h-80 w-full md:h-[420px]">
+            <Image
+              src="/images/WasteDriver_EndDumpTrailer2.jfif"
+              alt="Waste Driver truck with end dump trailer"
+              fill
+              className="rounded-3xl object-cover shadow-2xl ring-1 ring-black/5"
+              priority
+            />
+          </div>
+
+        </div>
       </section>
 
-      {/* Network Map */}
+      {/* ---------------------------------------------------------------------- */}
+      {/* NETWORK MAP                                                            */}
+      {/* ---------------------------------------------------------------------- */}
       <section>
         <div className="max-w-5xl mx-auto mt-10">
           <CanadaMap />
@@ -34,7 +62,9 @@ export default function TechnologyPage() {
         </p>
       </section>
 
-      {/* Routing Efficiency */}
+      {/* ---------------------------------------------------------------------- */}
+      {/* ROUTING EFFICIENCY                                                     */}
+      {/* ---------------------------------------------------------------------- */}
       <section>
         <h2 className="text-3xl font-bold text-slate-900 text-center">
           Routing Efficiency
@@ -81,7 +111,9 @@ export default function TechnologyPage() {
         </div>
       </section>
 
-      {/* Marketplace Model */}
+      {/* ---------------------------------------------------------------------- */}
+      {/* MARKETPLACE MODEL                                                      */}
+      {/* ---------------------------------------------------------------------- */}
       <section>
         <h2 className="text-3xl font-bold text-slate-900 text-center">
           Marketplace Model
@@ -124,7 +156,9 @@ export default function TechnologyPage() {
         </div>
       </section>
 
-      {/* Environmental Technology */}
+      {/* ---------------------------------------------------------------------- */}
+      {/* ENVIRONMENTAL TECHNOLOGY                                               */}
+      {/* ---------------------------------------------------------------------- */}
       <section>
         <h2 className="text-3xl font-bold text-slate-900 text-center">
           Environmental Technology
@@ -137,8 +171,10 @@ export default function TechnologyPage() {
         </ul>
       </section>
 
-      {/* CTA Section */}
-      <section className="rounded-3xl bg-emerald-600 px-10 py-16 text-center text-white shadow-lg">
+      {/* ---------------------------------------------------------------------- */}
+      {/* CTA SECTION — Premium Tech Marketplace                                 */}
+      {/* ---------------------------------------------------------------------- */}
+      <section className="rounded-3xl bg-emerald-600 px-10 py-16 text-center text-white shadow-lg max-w-4xl mx-auto">
         <h2 className="text-3xl font-bold">Technology That Works for Everyone</h2>
         <p className="mt-3 text-lg text-emerald-100">
           Lower costs for Users. Higher efficiency for Drivers. Better outcomes for communities.
@@ -150,6 +186,17 @@ export default function TechnologyPage() {
         >
           Download the App
         </a>
+
+        {/* Footer Logo — New */}
+        <div className="mt-20 flex justify-center">
+          <Image
+            src="/images/WasteDriver_TruckandTextLogo.jfif"
+            alt="Waste Driver truck and text logo"
+            width={260}
+            height={120}
+            className="opacity-90"
+          />
+        </div>
       </section>
 
     </div>

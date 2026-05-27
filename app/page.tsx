@@ -1,3 +1,4 @@
+// app/page.tsx
 import Image from "next/image";
 import { CanadaMap } from "@/components/CanadaMap";
 
@@ -39,11 +40,11 @@ export default function HomePage() {
               </p>
             </div>
 
-            {/* RIGHT IMAGE */}
+            {/* RIGHT IMAGE — Updated with new Waste Driver truck */}
             <div className="relative h-96 w-full md:h-[500px]">
               <Image
-                src="/images/hero-curbside.jpg"
-                alt="Curbside waste ready for pickup"
+                src="/images/WasteDriver_EndDumpTrailer1.jfif"
+                alt="Waste Driver white pickup truck with black end dump trailer"
                 fill
                 className="rounded-3xl object-cover shadow-2xl ring-1 ring-black/5"
                 priority
@@ -218,8 +219,20 @@ export default function HomePage() {
             Contact Us
           </a>
         </div>
+
+        {/* Footer Logo — New */}
+        <div className="mt-20 flex justify-center">
+          <Image
+            src="/images/WasteDriver_TruckandTextLogo.jfif"
+            alt="Waste Driver truck and text logo"
+            width={260}
+            height={120}
+            className="opacity-90"
+          />
+        </div>
       </section>
 
     </div>
   );
 }
+
