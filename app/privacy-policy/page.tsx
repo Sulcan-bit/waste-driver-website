@@ -1,4 +1,5 @@
 // app/privacy-policy/page.tsx
+
 export default function PrivacyPolicyPage() {
   return (
     <div className="space-y-32">
@@ -35,15 +36,63 @@ export default function PrivacyPolicyPage() {
         <div>
           <h2 className="text-3xl font-bold text-slate-900">2. Information We Collect</h2>
 
-          <ul className="mt-6 list-disc pl-6 space-y-3 text-lg text-slate-700">
-            <li>Account information (name, email, phone number)</li>
-            <li>Addresses for quotes, pickups, and deliveries</li>
-            <li>Driver license, insurance, and vehicle details (Drivers only)</li>
-            <li>Photos uploaded for quotes or job documentation</li>
-            <li>Payment method information (processed securely by Stripe)</li>
-            <li>Device, usage, and analytics data</li>
-            <li>SMS consent status and opt‑in/opt‑out history</li>
-          </ul>
+<ul className="mt-6 list-disc pl-6 space-y-3 text-lg text-slate-700">
+  <li>Account information (name, email, phone number)</li>
+  <li>Addresses for quotes, pickups, deliveries, and service locations</li>
+  <li>Driver-specific information:
+    <ul className="list-disc pl-6 space-y-2 mt-2">
+      <li>Driver’s license number and expiration date</li>
+      <li>Vehicle registration and license plate number</li>
+      <li>Insurance provider, policy number, and proof of insurance</li>
+      <li>Home and business addresses</li>
+      <li>Uploaded photos (vehicle, documents, job-related images)</li>
+    </ul>
+  </li>
+  <li>User-specific information:
+    <ul className="list-disc pl-6 space-y-2 mt-2">
+      <li>Pickup and delivery addresses</li>
+      <li>Mobile phone number and SMS consent status</li>
+      <li>Email address (optional)</li>
+      <li>Uploaded photos for quotes or job documentation</li>
+    </ul>
+  </li>
+  <li>Payment method information (processed securely by Stripe; never stored on our servers)</li>
+  <li>Device, usage, and analytics data</li>
+  <li>SMS consent status and opt‑in/opt‑out history</li>
+</ul>
+
+<h2 className="text-3xl font-bold text-slate-900">2.1 Protection of Personal Information</h2>
+
+<p className="mt-4 text-lg text-slate-700 leading-relaxed">
+  Waste Driver does <strong>not</strong> share, sell, rent, or transfer any Driver or User personal
+  information to third parties for marketing, promotional, or unrelated business purposes.
+</p>
+
+<p className="mt-4 text-lg text-slate-700 leading-relaxed">
+  Personal information collected from Drivers—including name, address, phone number, email,
+  driver’s license details, vehicle registration, insurance information, and license plate
+  numbers—is used solely for identity verification, onboarding, compliance, and operational
+  purposes within the Waste Driver platform.
+</p>
+
+<p className="mt-4 text-lg text-slate-700 leading-relaxed">
+  Personal information collected from Users—including name, address, phone number, email, and
+  pickup/delivery details—is used strictly to coordinate bookings, provide service updates, and
+  support account functionality.
+</p>
+
+<p className="mt-4 text-lg text-slate-700 leading-relaxed">
+  We do not disclose personal information to waste haulers, contractors, or Drivers unless it is
+  required to complete a booking or service request initiated by the User.
+</p>
+
+<p className="mt-4 text-lg text-slate-700 leading-relaxed">
+  All personal information is stored securely using industry‑standard encryption and access
+  controls. Only authorized Waste Driver personnel may access this information for operational
+  purposes.
+</p>
+
+
         </div>
 
         {/* SMS PRIVACY REQUIREMENT */}
