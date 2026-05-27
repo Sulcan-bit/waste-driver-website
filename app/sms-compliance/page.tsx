@@ -53,15 +53,23 @@ export default function SMSCompliancePage() {
 
           <p className="mt-4 text-lg text-slate-700 leading-relaxed">
             Waste Driver uses SMS messaging strictly for operational, transactional, and
-            account‑related communication. SMS is used to:
+            account‑related communication, including verification codes and job‑related
+            notifications. SMS is used to:
           </p>
 
           <ul className="mt-6 list-disc pl-6 space-y-3 text-lg text-slate-700">
             <li>Send Users quotes, booking confirmations, arrival notifications, and job updates.</li>
             <li>Send Drivers job opportunities, quote requests, and operational updates.</li>
-            <li>Verify User and Driver phone numbers during onboarding.</li>
+            <li>Verify User and Driver phone numbers during onboarding with 2FA/verification codes.</li>
             <li>Provide support information, profile reminders, and account‑related alerts.</li>
+            <li>Send service notifications related to account activity and booking status.</li>
           </ul>
+
+          <p className="mt-6 text-lg text-slate-700 leading-relaxed">
+            For carrier classification, Waste Driver’s Toll‑Free messaging use case is considered
+            <strong> Mixed</strong>, covering both verification codes (2FA) and operational
+            notifications for Users and Drivers.
+          </p>
         </div>
 
         {/* OPT-IN */}
@@ -77,7 +85,8 @@ export default function SMSCompliancePage() {
 
           <h3 className="mt-8 text-2xl font-semibold text-slate-900">Users</h3>
           <ul className="mt-4 list-disc pl-6 space-y-3 text-lg text-slate-700">
-            <li>Entering their mobile number during account creation.</li>
+            <li>Entering their mobile number during account creation in the WasteDriver app.</li>
+            <li>Checking an SMS consent checkbox (unchecked by default and separate from email and Terms acceptance).</li>
             <li>Verifying their phone number via a 6‑digit SMS code.</li>
             <li>Agreeing to receive SMS messages during onboarding and in the Terms of Service.</li>
           </ul>
@@ -85,6 +94,7 @@ export default function SMSCompliancePage() {
           <h3 className="mt-10 text-2xl font-semibold text-slate-900">Drivers</h3>
           <ul className="mt-4 list-disc pl-6 space-y-3 text-lg text-slate-700">
             <li>Entering their mobile number during Driver onboarding.</li>
+            <li>Checking an SMS consent checkbox (unchecked by default) to receive job and operational messages.</li>
             <li>Verifying their phone number via a 6‑digit SMS code.</li>
             <li>Agreeing to receive job alerts, quote requests, and operational messages.</li>
           </ul>
@@ -105,7 +115,8 @@ export default function SMSCompliancePage() {
 
             <p className="mt-6 text-lg text-slate-700 leading-relaxed">
               The User or Driver must reply YES before any further messages are sent. This satisfies
-              Canadian toll‑free double opt‑in requirements.
+              Canadian toll‑free double opt‑in requirements and ensures that only recipients who
+              have explicitly confirmed consent receive SMS messages.
             </p>
           </div>
 
@@ -153,8 +164,16 @@ export default function SMSCompliancePage() {
           <h2 className="text-3xl font-bold text-slate-900">4. Types of SMS Messages Sent</h2>
 
           <p className="mt-4 text-lg text-slate-700 leading-relaxed">
-            Waste Driver sends only operational, transactional, and account‑related messages.
+            Waste Driver sends only operational, transactional, and account‑related messages. Message
+            types include:
           </p>
+
+          <ul className="mt-4 list-disc pl-6 space-y-3 text-lg text-slate-700">
+            <li>2FA/verification codes for account signup and phone verification.</li>
+            <li>Driver onboarding and job alerts (e.g., new job opportunities, profile completion reminders).</li>
+            <li>Customer pickup/booking status updates (e.g., confirmations, arrival notifications, completion updates).</li>
+            <li>Service notifications related to account activity, payment status, and support.</li>
+          </ul>
 
           {/* ⭐ REQUIRED BY TELNYX — BRANDED SAMPLE MESSAGE */}
           <div className="mt-10 p-6 bg-emerald-50 rounded-2xl border border-emerald-200">
@@ -285,4 +304,5 @@ export default function SMSCompliancePage() {
     </div>
   );
 }
+
 

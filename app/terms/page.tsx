@@ -63,13 +63,38 @@ export default function TermsPage() {
           </p>
         </div>
 
-        {/* SMS CONSENT */}
+        {/* SMS CONSENT — UPDATED FOR TELNYX */}
         <div>
           <h2 className="text-3xl font-bold text-slate-900">5. SMS Messaging</h2>
+
           <p className="mt-4 text-lg text-slate-700 leading-relaxed">
             By opting in to SMS messaging, you agree to receive operational messages such as
             verification codes, booking updates, and driver notifications. Message frequency varies.
             Reply STOP to opt out, HELP for help.
+          </p>
+
+          <p className="mt-6 text-lg text-slate-700 leading-relaxed">
+            During account creation in the WasteDriver app, Users and Drivers provide explicit SMS
+            consent by entering their mobile number and checking an SMS consent checkbox
+            <strong> (unchecked by default)</strong>. After submitting, they receive a confirmation
+            SMS and must <strong>reply YES</strong> to activate messaging. This double opt‑in
+            process satisfies Canadian and U.S. Toll‑Free carrier requirements.
+          </p>
+
+          <p className="mt-6 text-lg text-slate-700 leading-relaxed">
+            SMS messages may include:
+          </p>
+
+          <ul className="mt-4 list-disc pl-6 space-y-3 text-lg text-slate-700">
+            <li>2FA / verification codes for account signup</li>
+            <li>Driver onboarding and operational job alerts</li>
+            <li>Customer pickup, booking, and arrival updates</li>
+            <li>Service notifications related to account activity</li>
+          </ul>
+
+          <p className="mt-6 text-lg text-slate-700 leading-relaxed">
+            Waste Driver’s Toll‑Free messaging use case is classified as
+            <strong> Mixed</strong>, covering both verification codes and operational notifications.
           </p>
         </div>
 
@@ -110,3 +135,4 @@ export default function TermsPage() {
     </div>
   );
 }
+
