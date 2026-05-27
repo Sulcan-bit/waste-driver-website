@@ -43,7 +43,7 @@ export default function HomePage() {
             {/* RIGHT IMAGE — Updated with new Waste Driver truck */}
             <div className="relative h-96 w-full md:h-[500px]">
               <Image
-                src="/images/WasteDriver_EndDumpTrailer1.jfif"
+                src="/images/WasteDriver_EndDumpTrailer1.jpg"
                 alt="Waste Driver white pickup truck with black end dump trailer"
                 fill
                 className="rounded-3xl object-cover shadow-2xl ring-1 ring-black/5"
@@ -223,7 +223,7 @@ export default function HomePage() {
         {/* Footer Logo — New */}
         <div className="mt-20 flex justify-center">
           <Image
-            src="/images/WasteDriver_TruckandTextLogo.jfif"
+            src="/images/WasteDriver_TruckandTextLogo.jpg"
             alt="Waste Driver truck and text logo"
             width={260}
             height={120}

@@ -61,7 +61,7 @@ export default function UsersPage() {
           {/* RIGHT IMAGE — New Waste Driver truck */}
           <div className="relative h-80 w-full md:h-[480px]">
             <Image
-              src="/images/WasteDriver_EndDumpTrailer3.jfif"
+              src="/images/WasteDriver_EndDumpTrailer3.jpg"
               alt="Waste Driver truck with end dump trailer"
               fill
               className="rounded-3xl object-cover shadow-2xl ring-1 ring-black/5"
@@ -318,7 +318,7 @@ export default function UsersPage() {
         {/* Footer Logo — New */}
         <div className="mt-20 flex justify-center">
           <Image
-            src="/images/WasteDriver_TruckandTextLogo.jfif"
+            src="/images/WasteDriver_TruckandTextLogo.jpg"
             alt="Waste Driver truck and text logo"
             width={260}
             height={120}
