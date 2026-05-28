@@ -99,6 +99,40 @@ export default function SMSCompliancePage() {
             <li>Agreeing to receive job alerts, quote requests, and operational messages.</li>
           </ul>
 
+{/* ---------------------------------------------------------------------- */}
+{/* CTIA REQUIRED DISCLOSURES (MANDATORY FOR TELNYX APPROVAL)             */}
+{/* ---------------------------------------------------------------------- */}
+<div className="p-8 bg-white rounded-3xl shadow-xl ring-1 ring-black/5">
+  <h2 className="text-3xl font-bold text-slate-900">
+    Required SMS Disclosures (CTIA & Carrier Compliance)
+  </h2>
+
+  <p className="mt-6 text-lg text-slate-700 leading-relaxed">
+    Before receiving any SMS messages from Waste Driver, all Users and Drivers are
+    shown the following mandatory disclosures as part of the SMS opt‑in process:
+  </p>
+
+  <div className="mt-8 space-y-4 text-lg text-slate-700 leading-relaxed">
+    <p><strong>Brand:</strong> Waste Driver Inc.</p>
+    <p><strong>Use Case:</strong> Transactional and operational SMS messages including verification codes, driver quotes, booking confirmations, arrival notifications, and job status updates.</p>
+    <p><strong>Message Frequency:</strong> Message frequency may vary based on account activity.</p>
+    <p><strong>STOP Instructions:</strong> Reply STOP to opt out at any time.</p>
+    <p><strong>HELP Instructions:</strong> Reply HELP for help or support.</p>
+    <p><strong>Rates Disclosure:</strong> Standard message and data rates may apply.</p>
+    <p>
+      <strong>Terms & Privacy Policy:</strong><br />
+      View our <a href="/terms" className="text-emerald-700 hover:text-emerald-800 underline">Terms</a> and 
+      <a href="/privacy-policy" className="text-emerald-700 hover:text-emerald-800 underline ml-1">Privacy Policy</a>.
+    </p>
+  </div>
+
+  <p className="mt-8 text-lg text-slate-700 leading-relaxed">
+    These disclosures are presented directly beside the SMS opt‑in checkbox during
+    account creation and must be acknowledged before any SMS messages are sent.
+  </p>
+</div>
+
+
           {/* ⭐ REQUIRED BY TELNYX — DIGITAL OPT-IN WORKFLOW */}
           <div className="mt-10 p-6 bg-emerald-50 rounded-2xl border border-emerald-200">
             <h3 className="text-2xl font-semibold text-slate-900">Digital Opt‑In Workflow</h3>
