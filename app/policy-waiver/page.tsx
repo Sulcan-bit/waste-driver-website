@@ -1,3 +1,5 @@
+// app/policy-waiver/page.tsx
+
 export default function PolicyWaiverPage() {
   return (
     <div className="space-y-32">
@@ -24,7 +26,7 @@ export default function PolicyWaiverPage() {
         {/* FULL LEGAL TEXT */}
         <div className="prose prose-lg max-w-none text-slate-800 whitespace-pre-wrap">
 {`
-${`# Waste Driver Inc.
+# Waste Driver Inc.
 
 ## User and Driver Terms of Use, Liability Waiver, and Platform Participation Agreement
 
