@@ -49,6 +49,10 @@ export default function Header() {
             Terms
           </a>
 
+          <a href="/policy-waiver" className="hover:text-emerald-600 transition-colors">
+  Policy Waiver
+</a>
+
           {/* PHONE NUMBER — spacing tightened */}
           <a
             href="tel:18339992783"
@@ -129,6 +133,11 @@ export default function Header() {
     <a href="/terms" className="block text-center hover:text-emerald-600 transition-colors">
       Terms
     </a>
+
+    <a href="/policy-waiver" className="block text-center hover:text-emerald-600 transition-colors">
+  Policy Waiver
+</a>
+
 
     <a
       href="tel:18339992783"

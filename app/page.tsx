@@ -1,4 +1,5 @@
 // app/page.tsx
+
 import Image from "next/image";
 import { CanadaMap } from "@/components/CanadaMap";
 
@@ -221,15 +222,37 @@ export default function HomePage() {
         </div>
 
         {/* Footer Logo — New */}
-        <div className="mt-20 flex justify-center">
-          <Image
-            src="/images/WasteDriver_TruckandTextLogo.jpg"
-            alt="Waste Driver truck and text logo"
-            width={260}
-            height={120}
-            className="opacity-90"
-          />
-        </div>
+<div className="mt-20 flex justify-center">
+  <Image
+    src="/images/WasteDriver_TruckandTextLogo.jpg"
+    alt="Waste Driver truck and text logo"
+    width={260}
+    height={120}
+    className="opacity-90"
+  />
+</div>
+
+{/* LEGAL FOOTER LINKS */}
+<div className="mt-12 flex flex-wrap justify-center gap-8 text-slate-600 text-[15px] font-medium">
+
+  <a href="/privacy-policy" className="hover:text-emerald-600 transition-colors">
+    Privacy Policy
+  </a>
+
+  <a href="/terms" className="hover:text-emerald-600 transition-colors">
+    Terms
+  </a>
+
+  <a href="/policy-waiver" className="hover:text-emerald-600 transition-colors">
+    Policy Waiver
+  </a>
+
+  <a href="/sms-compliance" className="hover:text-emerald-600 transition-colors">
+    SMS Compliance
+  </a>
+
+</div>
+
       </section>
 
     </div>
